@@ -1,0 +1,69 @@
+ELIGIENDO MI CAMINO — versión offline
+======================================
+
+La app de orientación vocacional con Gallito: los 8 pasos, el asistente de IA
+que corre en el propio dispositivo, "Datos verificados" (becas, sueldos,
+universidades e institutos) y el registro de uso. Funciona SIN internet.
+
+CÓMO USARLA
+-----------
+1) Doble clic en  start.bat  (Windows)  o  start.sh  (Mac/Linux).
+   - Necesita Node.js o Python instalado en el equipo (Node: https://nodejs.org).
+   - Se abrirá tu navegador en  http://localhost:5173  → usa Chrome o Edge actualizados.
+
+2) La PRIMERA vez, CON internet:
+   - En la pantalla de Inicio, abre "Prepara la app para usar sin internet".
+   - Elige el tamaño de Gallito y pulsa "Descargar el asistente".
+     (Se descarga UNA sola vez, ~1–2 GB, y se reutiliza en TODOS los pasos.)
+   - Espera a que diga  "✅ Listo para usar sin internet".
+
+3) Ya puedes DESCONECTARTE de internet:
+   - La app y Gallito siguen funcionando sin conexión.
+   - Tu uso se guarda en el equipo y se envía a la sede cuando vuelva el internet.
+
+BUENO SABER
+-----------
+- "Datos verificados" (Paso 6) NO necesita descargar nada: becas, sueldos,
+  universidades e institutos siempre exactos, en cualquier equipo, sin internet.
+- El chat de IA (Gallito) necesita un equipo con WebGPU (Chrome/Edge en
+  computadora, o un celular reciente). Si el equipo no lo soporta, la app igual
+  funciona, solo sin el chat de IA.
+- Es UN solo Gallito para todo: se descarga una vez, no por paso.
+
+NOVEDADES
+---------
+- Medición de avance: al empezar y al terminar el recorrido, el alumno marca 1-5 qué tan
+  claro tiene su próximo paso y cuán seguro se siente; al final ve cuánto avanzó.
+- "Escuchar": cada mensaje de Gallito se puede oír en voz alta (sin internet).
+- Ritmo de la entrevista: el alumno elige "Completa (10 preguntas)" o "Rápida (5)".
+- Reflexión: tras conocer su descripción, el alumno confirma si se siente identificado.
+
+PARA EL TUTOR / ORIENTADOR
+--------------------------
+Abre el panel del dispositivo en:  http://localhost:5173/?view=panel
+Muestra el avance del alumno, su medición pre/post y ALERTAS de bienestar (si Gallito
+detectó señales de crisis o tristeza). El tablero de TODOS los alumnos está en la sede
+(los datos se sincronizan automáticamente cuando hay internet).
+
+PARA HQ — CONECTAR CADA EQUIPO A SU COLEGIO Y PROFESOR
+------------------------------------------------------
+Cada copia debe saber a qué colegio/sección/profesor pertenece. Se hace UNA vez por colegio:
+1) Copia "escuela.example.json", llénalo con colegio/sección/profesor + el servidor de la sede
+   (sync_endpoint) y guárdalo como  escuela.json  dentro de  dist/  (o en la raíz del proyecto y
+   recompila con  node build.mjs ).
+2) Reparte ese paquete/USB a ese colegio. Al abrir, el equipo muestra el colegio y profesor, y el
+   estudiante solo escribe su NOMBRE y su NÚMERO DE LISTA.
+3) Los datos se guardan offline y se envían solos al sync_endpoint cuando hay internet.
+En equipos compartidos: cada alumno escribe su nombre al entrar; al terminar, el botón "Cambiar"
+(abajo a la izquierda) limpia para el siguiente estudiante sin mezclar datos.
+
+DISTRIBUIR EN PEN-DRIVE / USB (sin que cada equipo descargue el modelo)
+-----------------------------------------------------------------------
+Para que ningún equipo tenga que descargar el modelo (ideal para colegios):
+1) node bundle-model.mjs           (descarga Gallito Plus ~1.9 GB dentro de models/)
+   - Para un modelo más liviano:  node bundle-model.mjs Qwen2.5-1.5B-Instruct-q4f16_1-MLC
+2) node build.mjs                  (incluye el modelo en dist/)
+3) Copia toda la carpeta del paquete (dist/, serve.mjs, start.bat, LEEME.txt) a la USB.
+El equipo que la use NO descarga nada: Gallito carga desde la USB, 100% offline desde el primer momento.
+
+Para detener: cierra la ventana negra (o pulsa Ctrl+C en ella).

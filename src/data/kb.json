@@ -1,0 +1,5246 @@
+{
+  "sueldos_por_region": {
+    "nota": "La tabla de sueldos de arriba es de Lima Metropolitana (el mercado que más paga). Los ingresos varían bastante según la región.",
+    "patron": "Suelen ser más altos en Lima y en regiones mineras (Moquegua, Arequipa, Ica, Tacna); más bajos en zonas rurales de la sierra y la selva.",
+    "ejemplo": "Ejemplo real (MTPE): en Economía, un joven gana en promedio S/ 4,526 en Lima, S/ 4,017 a nivel nacional y S/ 2,355 en Cusco.",
+    "como_ver_tu_region": "Para ver cuánto paga una carrera EN TU REGIÓN, entra a Mi Carrera (MTPE) y filtra por tu departamento.",
+    "enlace": "https://micarrera.trabajo.gob.pe",
+    "fuente": "MTPE - Mi Carrera (EDO Lima Metropolitana y Nacional); INEI"
+  },
+  "carreras_mejor_pagadas": [
+    {
+      "carrera": "Ingeniería de Sistemas y Cómputo",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 4710,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Ciencias de la Computación",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 4651,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Estadística",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 4527,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Economía",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 4526,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Ingeniería de Telecomunicaciones",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 4326,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Ingeniería Minera, Metalurgia y Petróleo",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 4270,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Ingeniería Industrial",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 4248,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Ingeniería Eléctrica",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 4223,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Ingeniería Mecánica",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 4177,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Ingeniería Civil",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 4152,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Otras Carreras de Administración",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 4068,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Geología",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 4043,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Medicina",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3897,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Ingeniería Naval y Aeronáutica",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3862,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Administración de Empresas",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3794,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Agronegocios",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3727,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Ingeniería Electrónica",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3710,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Marketing",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3704,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Administración Pública",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3685,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Derecho",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3622,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Agropecuaria",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3479,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Investigación Operativa",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3429,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Antropología y Arqueología",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3419,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Ciencias Políticas",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3373,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Geografía",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3287,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Negocios Internacionales",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3245,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Servicios Sociales y Asistenciales",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3223,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Arquitectura y Urbanismo",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3213,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Ciencias de la Comunicación",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3211,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Ingeniería Sanitaria",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3203,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Química",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3166,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Idiomas",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3152,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Ecología y Medio Ambiente",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3123,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Matemática",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3065,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Farmacia y Bioquímica",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3021,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Periodismo y Locución",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 3010,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Ciencias Forestales",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2993,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Diseño",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2949,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Educación Especial",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2949,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Otras Ingenierías",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2932,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Ingeniería en Agroindustria",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2890,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Educación Tecnológica",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2888,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Trabajo Social",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2832,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Bibliotecología y Archivo",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2828,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Ingeniería en Industrias Alimentarias",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2828,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Contabilidad y Finanzas",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2827,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Diseño",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2808,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Ingeniería Textil y Confecciones",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2799,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Física",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2746,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Biología",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2743,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Administración de Servicios Turísticos, Hotelería y Gastronomía",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2721,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Teología y Filosofía",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2712,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Tecnología Médica",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2687,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Artes",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2660,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Nutrición",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2657,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Zootecnia",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2566,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Veterinaria",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2547,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Psicología",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2534,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Marketing",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2525,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Enfermería",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2473,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Ingeniería Pesquera",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2389,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Historia",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2345,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Otras Carreras de Educación",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2335,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Educación Secundaria",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2308,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Educación Física",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2282,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Educación Primaria",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2265,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Educación Inicial",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2230,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Odontología",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2216,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Contabilidad y Finanzas",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2206,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Lingüística y Literatura",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2157,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Obstetricia",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 2004,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Tecnología Médica",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 1880,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Farmacia y Bioquímica",
+      "nivel": "universitaria",
+      "salario_mensual_soles": 1826,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Técnico en Minera, Metalurgia y Petróleo",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 6235,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Ciencias de la Computación",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 3968,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Técnico Industrial",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 3383,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Técnico Civil",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 3135,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Técnico Electricista",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 3128,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Educación Secundaria",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 2894,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Arquitectura y Urbanismo",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 2881,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Textil y Confecciones",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 2847,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Técnico Mecánica",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 2783,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Agropecuaria",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 2763,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Ciencias de la Comunicación",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 2752,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Técnico Electrónica",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 2671,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Administración de Servicios Turísticos, Hotelería y Gastronomía",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 2606,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Administración de Empresas",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 2370,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Química",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 2355,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Educación Primaria",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 2338,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Negocios Internacionales",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 2309,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Técnico de Telecomunicaciones",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 2213,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Técnico en Industrias Alimentarias",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 2184,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Secretariado",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 2048,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Turismo",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 1944,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Enfermería",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 1667,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    },
+    {
+      "carrera": "Educación Inicial",
+      "nivel": "tecnica",
+      "salario_mensual_soles": 1475,
+      "fuente": "MTPE - Mi Carrera (Planilla Electronica, set 2024-ago 2025); ingreso de jovenes 18-29 anios, Lima Metropolitana"
+    }
+  ],
+  "mercado_laboral": [
+    {
+      "dato": "El informe del INEI cubre el mercado laboral de Lima Metropolitana (Provincia de Lima y Callao), no de todo el pais. Fuente: Encuesta Permanente de Empleo Nacional (EPEN).",
+      "fuente": "INEI - Situacion del Mercado Laboral en Lima Metropolitana, Informe Tecnico Ene-Dic 2025 (EPEN)"
+    },
+    {
+      "dato": "En 2025, la Poblacion en Edad de Trabajar (PET, 14 anios a mas) en Lima Metropolitana fue de 9 millones 181 mil 300 personas.",
+      "fuente": "INEI - Situacion del Mercado Laboral en Lima Metropolitana, Informe Tecnico Ene-Dic 2025 (EPEN)"
+    },
+    {
+      "dato": "La Poblacion Economicamente Activa (PEA) en 2025 fue de 5 millones 973 mil 900 personas, el 65,1% de la PET.",
+      "fuente": "INEI - Situacion del Mercado Laboral en Lima Metropolitana, Informe Tecnico Ene-Dic 2025 (EPEN)"
+    },
+    {
+      "dato": "La poblacion ocupada en 2025 alcanzo 5 millones 621 mil 300 personas, el 94,1% de la PEA; crecio 3,0% respecto a 2024.",
+      "fuente": "INEI - Situacion del Mercado Laboral en Lima Metropolitana, Informe Tecnico Ene-Dic 2025 (EPEN)"
+    },
+    {
+      "dato": "La tasa de desempleo en Lima Metropolitana en 2025 fue de 5,9% (352 mil 500 personas desocupadas); en el trimestre oct-nov-dic 2025 bajo a 5,0%.",
+      "fuente": "INEI - Situacion del Mercado Laboral en Lima Metropolitana, Informe Tecnico Ene-Dic 2025 (EPEN)"
+    },
+    {
+      "dato": "En 2025, de cada 100 personas de la PEA, 94 tenian empleo y 6 buscaban trabajo activamente.",
+      "fuente": "INEI - Situacion del Mercado Laboral en Lima Metropolitana, Informe Tecnico Ene-Dic 2025 (EPEN)"
+    },
+    {
+      "dato": "Solo el 61,3% de la PEA tiene empleo adecuado; el 32,8% esta subempleado (6% por horas/subempleo visible y 26,8% por ingresos/subempleo invisible).",
+      "fuente": "INEI - Situacion del Mercado Laboral en Lima Metropolitana, Informe Tecnico Ene-Dic 2025 (EPEN)"
+    },
+    {
+      "dato": "El sector Servicios concentra el 55,8% de los ocupados de Lima Metropolitana; Comercio el 22,1%; Manufactura el 13,4% y Construccion el 7,4%.",
+      "fuente": "INEI - Situacion del Mercado Laboral en Lima Metropolitana, Informe Tecnico Ene-Dic 2025 (EPEN)"
+    },
+    {
+      "dato": "En 2025 el empleo crecio en todos los sectores frente a 2024: Manufactura +3,6%, Servicios +3,0%, Construccion +3,0% y Comercio +2,2%.",
+      "fuente": "INEI - Situacion del Mercado Laboral en Lima Metropolitana, Informe Tecnico Ene-Dic 2025 (EPEN)"
+    },
+    {
+      "dato": "El ingreso promedio mensual del trabajo en Lima Metropolitana en 2025 fue de S/ 2 220; subio 9,1% respecto a 2024.",
+      "fuente": "INEI - Situacion del Mercado Laboral en Lima Metropolitana, Informe Tecnico Ene-Dic 2025 (EPEN)"
+    },
+    {
+      "dato": "Brecha de genero: el ingreso promedio de los hombres fue S/ 2 504,6 y el de las mujeres S/ 1 873,3; las mujeres ganan el 74,8% de lo que ganan los hombres.",
+      "fuente": "INEI - Situacion del Mercado Laboral en Lima Metropolitana, Informe Tecnico Ene-Dic 2025 (EPEN)"
+    },
+    {
+      "dato": "Ingreso promedio mensual por edad en 2025: jovenes de 14-24 anios S/ 1 274,4; de 25-44 anios S/ 2 315,2; de 45 a mas anios S/ 2 355,3.",
+      "fuente": "INEI - Situacion del Mercado Laboral en Lima Metropolitana, Informe Tecnico Ene-Dic 2025 (EPEN)"
+    },
+    {
+      "dato": "La PEA con educacion superior universitaria crecio 7,0% en 2025 y la no universitaria 1,5%; en cambio la PEA joven (14-24 anios) cayo 8,4%.",
+      "fuente": "INEI - Situacion del Mercado Laboral en Lima Metropolitana, Informe Tecnico Ene-Dic 2025 (EPEN)"
+    },
+    {
+      "dato": "Composicion educativa de la PEA en 2025: 30,5% con educacion universitaria, 21,0% superior no universitaria, 42,1% secundaria y 6,4% primaria o menos.",
+      "fuente": "INEI - Situacion del Mercado Laboral en Lima Metropolitana, Informe Tecnico Ene-Dic 2025 (EPEN)"
+    },
+    {
+      "dato": "La PEA femenina representa el 46,1% (2 millones 752 mil 600) y la masculina el 53,9% (3 millones 221 mil 200).",
+      "fuente": "INEI - Situacion del Mercado Laboral en Lima Metropolitana, Informe Tecnico Ene-Dic 2025 (EPEN)"
+    },
+    {
+      "dato": "La poblacion subempleada disminuyo 10,3% en 2025 (-226 mil personas) y el empleo adecuado aumento 11,9% (+388 mil), lo que indica mejora en la calidad del empleo.",
+      "fuente": "INEI - Situacion del Mercado Laboral en Lima Metropolitana, Informe Tecnico Ene-Dic 2025 (EPEN)"
+    }
+  ],
+  "becas": [
+    {
+      "nombre": "Beca 18 (PRONABEC)",
+      "entidad": "PRONABEC",
+      "tipo": "beca",
+      "para_quien": "Jovenes peruanos que terminan o ya terminaron la secundaria, con alto rendimiento (suele pedir tercio superior) y en pobreza o vulnerabilidad. Tiene 10 modalidades: Ordinaria (pobreza/pobreza extrema segun SISFOH), CNA (comunidades nativas amazonicas), PA (pueblo afroperuano), EIB (lengua originaria, para estudiar Educacion), VRAEM y zonas de conflicto, entre otras.",
+      "cubre": "Estudios completos (matricula y pensiones) mas manutencion: alimentacion, alojamiento, movilidad, utiles y laptop.",
+      "requisitos": "Haber concluido la secundaria, alto rendimiento academico, cumplir una de las 10 modalidades y la clasificacion socioeconomica que corresponda. La convocatoria 2026 inicia inscripcion en setiembre 2025 e incluye un Examen Nacional de Preseleccion (matematica y lectura).",
+      "como_postular": "En www.pronabec.gob.pe, seccion Concursos de becas y creditos, durante la convocatoria anual.",
+      "enlace": "https://www.pronabec.gob.pe/concursos-becas-creditos/"
+    },
+    {
+      "nombre": "Beca Permanencia (PRONABEC)",
+      "entidad": "PRONABEC",
+      "tipo": "beca",
+      "para_quien": "Estudiantes en pobreza o pobreza extrema que ya estan estudiando, entre el 2do y el antepenultimo ciclo.",
+      "cubre": "Alimentacion, movilidad y utiles de escritorio.",
+      "requisitos": "Estar matriculado en una institucion elegible, buen rendimiento y condicion socioeconomica vulnerable.",
+      "como_postular": "En PRONABEC durante la convocatoria correspondiente.",
+      "enlace": "https://www.pronabec.gob.pe/beca-permanencia/"
+    },
+    {
+      "nombre": "Beca Inclusion - Carreras Profesionales (PRONABEC)",
+      "entidad": "PRONABEC",
+      "tipo": "beca",
+      "para_quien": "Personas con discapacidad que concluyeron la secundaria e ingresaron a una universidad o instituto elegible.",
+      "cubre": "Matricula, pensiones, utiles, alimentacion, alojamiento, movilidad y laptop.",
+      "requisitos": "Acreditar la discapacidad y haber ingresado a una institucion elegible.",
+      "como_postular": "En PRONABEC durante la convocatoria.",
+      "enlace": "https://www.pronabec.gob.pe/beca-inclusion-carreras-profesionales/"
+    },
+    {
+      "nombre": "Beca Tec (PRONABEC)",
+      "entidad": "PRONABEC",
+      "tipo": "beca",
+      "para_quien": "Jovenes de 17 a 39 anios que quieren estudiar una carrera tecnica de alta demanda.",
+      "cubre": "Matricula, pensiones y certificacion tecnica.",
+      "requisitos": "Haber terminado la secundaria. No exige pobreza ni tercio superior como requisito obligatorio.",
+      "como_postular": "En PRONABEC durante la convocatoria.",
+      "enlace": "https://www.pronabec.gob.pe/beca-tec/"
+    },
+    {
+      "nombre": "Credito Talento (PRONABEC)",
+      "entidad": "PRONABEC",
+      "tipo": "credito",
+      "para_quien": "Estudiantes que necesitan financiar sus estudios superiores con un prestamo de condiciones favorables.",
+      "cubre": "Prestamo educativo de tasa baja (aprox. 4%) y hasta 10 anios para pagar.",
+      "requisitos": "Segun la convocatoria de PRONABEC.",
+      "como_postular": "En www.pronabec.gob.pe (Concursos de becas y creditos).",
+      "enlace": "https://www.pronabec.gob.pe/concursos-becas-creditos/"
+    },
+    {
+      "nombre": "Credito Pro (PRONABEC)",
+      "entidad": "PRONABEC",
+      "tipo": "credito",
+      "para_quien": "Estudiantes de los ultimos ciclos de universidad o instituto que necesitan apoyo para terminar sus estudios.",
+      "cubre": "Prestamo educativo para culminar la carrera.",
+      "requisitos": "Segun la convocatoria de PRONABEC.",
+      "como_postular": "En www.pronabec.gob.pe (Concursos de becas y creditos).",
+      "enlace": "https://www.pronabec.gob.pe/concursos-becas-creditos/"
+    },
+    {
+      "nombre": "Becas en universidades privadas",
+      "entidad": "Universidades privadas",
+      "tipo": "beca",
+      "para_quien": "Postulantes y estudiantes con buen merito academico o necesidad economica; cada universidad tiene sus propios programas.",
+      "cubre": "Varia por programa (descuentos o cobertura de pensiones).",
+      "requisitos": "Segun cada universidad.",
+      "como_postular": "Revisar la seccion 'Becas' de cada universidad: PUCP (Excelencia, Dintilhac, Fe y Alegria, BCP), U. del Pacifico (Beca UP), UTEC (Seleccion, BCP, Deporte), UPC (Honor, Socioeconomica, Deportiva), U. de Lima (Ilse Wisotzki), U. de Piura (COAR, Deporte, Talento).",
+      "enlace": "PUCP https://admision.pucp.edu.pe/becas-y-pensiones/becas | UP https://admision.up.edu.pe/becas/ | UTEC https://utec.edu.pe/experiencia-universitaria | UPC https://www.upc.edu.pe/admision/becas-y-financiamiento/ | ULima https://www.ulima.edu.pe/beca-ilse-wisotzki | UDEP https://www.udep.edu.pe/becas/"
+    },
+    {
+      "nombre": "Becas de cooperacion internacional",
+      "entidad": "PRONABEC (difusion) y entidades extranjeras",
+      "tipo": "beca",
+      "para_quien": "Jovenes que buscan estudiar en el extranjero o en Peru mediante convenios internacionales.",
+      "cubre": "Varia por programa y pais.",
+      "requisitos": "Segun cada convocatoria.",
+      "como_postular": "Revisar las becas de Espana (Fundacion Carolina), China, Corea, Turquia, Alemania (DAAD), entre otros.",
+      "enlace": "https://www.pronabec.gob.pe/becas-de-cooperacion-internacional/"
+    }
+  ],
+  "universidades_licenciadas": [
+    {
+      "nombre": "Universidad Interamericana para el Desarrollo",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad José Carlos Mariátegui de Moquegua",
+      "region": "Moquegua",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Nacional de Música",
+      "region": "Lima",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional Daniel Alomía Robles",
+      "region": "Huánuco",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Católica Los Ángeles de Chimbote",
+      "region": "Áncash",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Politécnica del Perú S.A.",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Privada de Trujillo",
+      "region": "La Libertad",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Peruana del Centro",
+      "region": "Junín",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Nacional Ciro Alegría",
+      "region": "La Libertad",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional Pedro Ruiz Gallo",
+      "region": "Lambayeque",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional San Luis Gonzaga",
+      "region": "Ica",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Autónoma de Ica",
+      "region": "Ica",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Facultad de Teología Pontificia y Civil de Lima",
+      "region": "Lima",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional Federico Villarreal",
+      "region": "Lima",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Tecnológica de los Andes",
+      "region": "Apurímac",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Peruana Los Andes",
+      "region": "Junín",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Nacional Micaela Bastidas de Apurímac",
+      "region": "Apurímac",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional José Faustino Sánchez Carrión",
+      "region": "Lima",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Señor de Sipán ",
+      "region": "Lambayeque",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Nacional del Callao ",
+      "region": "Callao",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional de Educación  Enrique Guzmán y Valle",
+      "region": "Lima",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Privada Norbert Wiener ",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Nacional de Tumbes ",
+      "region": "Tumbes",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Privada San Juan Bautista",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Nacional Amazónica de Madre de Dios",
+      "region": "Madre de Dios",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional Agraria de la Selva",
+      "region": "Huánuco",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional Daniel Alcides Carrión",
+      "region": "Pasco",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional Hermilio Valdizán",
+      "region": "Huánuco",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional de Huancavelica",
+      "region": "Huancavelica",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional Intercultural de Quillabamba",
+      "region": "Cusco",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Tecnológica del Perú",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Privada de Huancayo Franklin Roosevelt",
+      "region": "Junín",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad César Vallejo",
+      "region": "La Libertad",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad de Huánuco",
+      "region": "Huánuco",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Nacional de Piura",
+      "region": "Piura",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional de San Antonio Abad del Cusco",
+      "region": "Cusco",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional de San Martín",
+      "region": "San Martín",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional de Frontera",
+      "region": "Piura",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional del Santa",
+      "region": "Áncash",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional del Centro del Perú",
+      "region": "Junín",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Católica de Trujillo Benedicto XVI ",
+      "region": "La Libertad",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Nacional Autónoma de Tayacaja “Daniel Hernández Morillo”",
+      "region": "Huancavelica",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional de la Amazonía Peruana",
+      "region": "Loreto",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional Santiago Antúnez de Mayolo",
+      "region": "Áncash",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional Autónoma de Chota",
+      "region": "Cajamarca",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Le Cordon Bleu S.A.C.",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Nacional de Ucayali ",
+      "region": "Ucayali",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad María Auxiliadora ",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Nacional Autónoma  Altoandina de Tarma",
+      "region": "Junín",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional Intercultural de  la Amazonia",
+      "region": "Ucayali",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional de Trujillo",
+      "region": "La Libertad",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Católica Sedes Sapientiae",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Nacional de Cañete",
+      "region": "Lima",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional de San Agustín",
+      "region": "Arequipa",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional de Juliaca",
+      "region": "Puno",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional Intercultural Fabiola Salazar Leguía de Bagua",
+      "region": "Amazonas",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Continental",
+      "region": "Junín",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Autónoma del Perú",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Nacional de Cajamarca",
+      "region": "Cajamarca",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional Autónoma de Alto Amazonas",
+      "region": "Loreto",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional Tecnológica De Lima Sur",
+      "region": "Lima",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Jaime Bausate y Meza",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Nacional Jorge Basadre Grohmann",
+      "region": "Tacna",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Peruana Unión",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Nacional de San Cristóbal de Huamanga",
+      "region": "Ayacucho",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional de Barranca",
+      "region": "Lima",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Científica del Sur",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad ESAN",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Nacional Mayor de San Marcos",
+      "region": "Lima",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Privada Antenor Orrego ",
+      "region": "La Libertad",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Nacional Intercultural de la Selva Central Juan Santos Atahualpa",
+      "region": "Junín",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Católica Santo Toribio de Mogrovejo",
+      "region": "Lambayeque",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad La Salle",
+      "region": "Arequipa",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Nacional de Jaén",
+      "region": "Cajamarca",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional de Moquegua",
+      "region": "Moquegua",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Católica de Santa María",
+      "region": "Arequipa",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Nacional del Altiplano ",
+      "region": "Puno",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Andina del Cusco ",
+      "region": "Cusco",
+      "tipo": "privada"
+    },
+    {
+      "nombre": " Universidad Privada de Tacna",
+      "region": "Tacna",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Nacional de Ingeniería ",
+      "region": "Lima",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad de Ciencias y  Humanidades",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Privada del Norte",
+      "region": "La Libertad",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Católica San Pablo",
+      "region": "Arequipa",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Marcelino Champagnat",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad San Ignacio de Loyola",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Peruana de Ciencias Aplicadas",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Nacional José María Arguedas",
+      "region": "Apurímac",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional Toribio Rodríguez de Mendoza de Amazonas",
+      "region": "Amazonas",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad de San Martín de Porres",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Antonio Ruiz de Montoya",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Nacional Autónoma de Huanta",
+      "region": "Ayacucho",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad Nacional Agraria la Molina",
+      "region": "Lima",
+      "tipo": "publica"
+    },
+    {
+      "nombre": "Universidad de Piura",
+      "region": "Piura",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Ricardo Palma",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Femenina del Sagrado Corazón",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad de Ciencias y Artes de América Latina",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad para el Desarrollo Andino",
+      "region": "Huancavelica",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad Peruana Cayetano Heredia",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad del Pacífico",
+      "region": "Lima",
+      "tipo": "privada"
+    },
+    {
+      "nombre": "Universidad de Lima",
+      "region": "Lima",
+      "tipo": "privada"
+    }
+  ],
+  "institutos_licenciados": [
+    {
+      "nombre": "PERU - JAPON",
+      "region": "Amazonas"
+    },
+    {
+      "nombre": "CURAHUASI",
+      "region": "Apurímac"
+    },
+    {
+      "nombre": "CIMAC - INTES",
+      "region": "Apurímac"
+    },
+    {
+      "nombre": "MARIA MONTESSORI",
+      "region": "Arequipa"
+    },
+    {
+      "nombre": "DEL SUR",
+      "region": "Arequipa"
+    },
+    {
+      "nombre": "SAN JOSE ORIOL",
+      "region": "Arequipa"
+    },
+    {
+      "nombre": "EF",
+      "region": "Arequipa"
+    },
+    {
+      "nombre": "TECSUP NO.2",
+      "region": "Arequipa"
+    },
+    {
+      "nombre": "THOMAS JEFFERSON",
+      "region": "Arequipa"
+    },
+    {
+      "nombre": "LILIA GUTIERREZ MOLERO",
+      "region": "Arequipa"
+    },
+    {
+      "nombre": "JOBS CAPACITY",
+      "region": "Arequipa"
+    },
+    {
+      "nombre": "SANTA MARIA",
+      "region": "Arequipa"
+    },
+    {
+      "nombre": "BSG INSTITUTE",
+      "region": "Arequipa"
+    },
+    {
+      "nombre": "CAYETANO HEREDIA S.R.L.",
+      "region": "Arequipa"
+    },
+    {
+      "nombre": "FUTURO DEL SUR-EL CARMEN",
+      "region": "Arequipa"
+    },
+    {
+      "nombre": "JOBS CAPACITY",
+      "region": "Arequipa"
+    },
+    {
+      "nombre": "LA PONTIFICIA",
+      "region": "Ayacucho"
+    },
+    {
+      "nombre": "VICTOR ALVAREZ HUAPAYA",
+      "region": "Ayacucho"
+    },
+    {
+      "nombre": "LA PONTIFICIA",
+      "region": "Ayacucho"
+    },
+    {
+      "nombre": "CESDE",
+      "region": "Ayacucho"
+    },
+    {
+      "nombre": "SINERGIA",
+      "region": "Ayacucho"
+    },
+    {
+      "nombre": "HUANTA",
+      "region": "Ayacucho"
+    },
+    {
+      "nombre": "PERU COREA DEL SUR",
+      "region": "Ayacucho"
+    },
+    {
+      "nombre": "AUCARA",
+      "region": "Ayacucho"
+    },
+    {
+      "nombre": "MARIA PARADO DE BELLIDO",
+      "region": "Ayacucho"
+    },
+    {
+      "nombre": "MANUEL ANTONIO HIERRO POZO",
+      "region": "Ayacucho"
+    },
+    {
+      "nombre": "JORGE AÑAÑOS & TANIA ALCAZAR",
+      "region": "Ayacucho"
+    },
+    {
+      "nombre": "COMPUTRON CAJAMARCA",
+      "region": "Cajamarca"
+    },
+    {
+      "nombre": "SAN JAVIER DEL MARAÑON",
+      "region": "Cajamarca"
+    },
+    {
+      "nombre": "SIMON BOLIVAR",
+      "region": "Callao"
+    },
+    {
+      "nombre": "NUEVO PACHACUTEC",
+      "region": "Callao"
+    },
+    {
+      "nombre": "KHIPU",
+      "region": "Cusco"
+    },
+    {
+      "nombre": "TUPAC AMARU",
+      "region": "Cusco"
+    },
+    {
+      "nombre": "LA SALLE",
+      "region": "Cusco"
+    },
+    {
+      "nombre": "KHIPU",
+      "region": "Cusco"
+    },
+    {
+      "nombre": "CLORINDA MATTO DE TURNER",
+      "region": "Cusco"
+    },
+    {
+      "nombre": "URUSAYHUA",
+      "region": "Cusco"
+    },
+    {
+      "nombre": "ILC LATINO DEL CUSCO",
+      "region": "Cusco"
+    },
+    {
+      "nombre": "ANTONIO LORENA",
+      "region": "Cusco"
+    },
+    {
+      "nombre": "TUINEN STAR",
+      "region": "Cusco"
+    },
+    {
+      "nombre": "SIGNOS DE FE",
+      "region": "Cusco"
+    },
+    {
+      "nombre": "RICARDO SALINAS VARA",
+      "region": "Huánuco"
+    },
+    {
+      "nombre": "JUAN BOSCO DE HUANUCO",
+      "region": "Huánuco"
+    },
+    {
+      "nombre": "FIBONACCI",
+      "region": "Huánuco"
+    },
+    {
+      "nombre": "SAN FRANCISCO DE SALES",
+      "region": "Huánuco"
+    },
+    {
+      "nombre": "ISABEL LA CATOLICA",
+      "region": "Huánuco"
+    },
+    {
+      "nombre": "LUIS FELIPE DE LAS CASAS GRIEVE",
+      "region": "Ica"
+    },
+    {
+      "nombre": "JHALEBET",
+      "region": "Ica"
+    },
+    {
+      "nombre": "FEDERICO VILLARREAL - CHINCHA",
+      "region": "Ica"
+    },
+    {
+      "nombre": "PALPA",
+      "region": "Ica"
+    },
+    {
+      "nombre": "COMPUMASTER DE LA SALUD",
+      "region": "Ica"
+    },
+    {
+      "nombre": "SAN PEDRO",
+      "region": "Junín"
+    },
+    {
+      "nombre": "CONTINENTAL",
+      "region": "Junín"
+    },
+    {
+      "nombre": "EUGENIO PACCELLY",
+      "region": "Junín"
+    },
+    {
+      "nombre": "SANTA LUCIA",
+      "region": "Junín"
+    },
+    {
+      "nombre": "INVESTIGACION CIENCIA Y TECNOLOGIA",
+      "region": "Junín"
+    },
+    {
+      "nombre": "INTERAMERICANO",
+      "region": "Junín"
+    },
+    {
+      "nombre": "CONTINENTAL",
+      "region": "Junín"
+    },
+    {
+      "nombre": "HECTOR VASQUEZ JIMENEZ",
+      "region": "La Libertad"
+    },
+    {
+      "nombre": "OTUZCO",
+      "region": "La Libertad"
+    },
+    {
+      "nombre": "NUEVA ESPERANZA",
+      "region": "La Libertad"
+    },
+    {
+      "nombre": "SIMON SANCHEZ REYES",
+      "region": "La Libertad"
+    },
+    {
+      "nombre": "SETIDP",
+      "region": "La Libertad"
+    },
+    {
+      "nombre": "REPUBLICA FEDERAL DE ALEMANIA",
+      "region": "Lambayeque"
+    },
+    {
+      "nombre": "MANUEL MESONES MURO - MASTER SYSTEM",
+      "region": "Lambayeque"
+    },
+    {
+      "nombre": "DE EMPRENDEDORES ISAG",
+      "region": "Lambayeque"
+    },
+    {
+      "nombre": "CUMBRE",
+      "region": "Lambayeque"
+    },
+    {
+      "nombre": "CAYETANO HEREDIA",
+      "region": "Lambayeque"
+    },
+    {
+      "nombre": "PEDRO CIEZA DE LEON",
+      "region": "Lambayeque"
+    },
+    {
+      "nombre": "ZEGEL",
+      "region": "Lima"
+    },
+    {
+      "nombre": "TOULOUSE LAUTREC",
+      "region": "Lima"
+    },
+    {
+      "nombre": "SAN IGNACIO DE LOYOLA - ESCUELA ISIL",
+      "region": "Lima"
+    },
+    {
+      "nombre": "CENTRO DE LA IMAGEN",
+      "region": "Lima"
+    },
+    {
+      "nombre": "CIBERTEC",
+      "region": "Lima"
+    },
+    {
+      "nombre": "CERTUS",
+      "region": "Lima"
+    },
+    {
+      "nombre": "IDAT",
+      "region": "Lima"
+    },
+    {
+      "nombre": "CORRIENTE ALTERNA",
+      "region": "Lima"
+    },
+    {
+      "nombre": "DANIEL ALCIDES CARRION",
+      "region": "Lima"
+    },
+    {
+      "nombre": "ISAM",
+      "region": "Lima"
+    },
+    {
+      "nombre": "ADEX",
+      "region": "Lima"
+    },
+    {
+      "nombre": "DANIEL ALCIDES CARRION",
+      "region": "Lima"
+    },
+    {
+      "nombre": "SAN MARCOS",
+      "region": "Lima"
+    },
+    {
+      "nombre": "ZEGEL",
+      "region": "Lima"
+    },
+    {
+      "nombre": "CIBERTEC",
+      "region": "Lima"
+    },
+    {
+      "nombre": "SAN IGNACIO DE LOYOLA S.A. - ISIL",
+      "region": "Lima"
+    },
+    {
+      "nombre": "INSTITUTO TECNICO DE ADMINISTRACION DE EMPRESAS - ITAE",
+      "region": "Lima"
+    },
+    {
+      "nombre": "CEPEA",
+      "region": "Lima"
+    },
+    {
+      "nombre": "IDAT",
+      "region": "Lima"
+    },
+    {
+      "nombre": "MARIA DE LOS ANGELES CIMA'S",
+      "region": "Lima"
+    },
+    {
+      "nombre": "ARZOBISPO LOAYZA",
+      "region": "Lima"
+    },
+    {
+      "nombre": "PAUL MULLER",
+      "region": "Lima"
+    },
+    {
+      "nombre": "CAPECO",
+      "region": "Lima"
+    },
+    {
+      "nombre": "LATINO",
+      "region": "Lima"
+    },
+    {
+      "nombre": "WERNHER VON BRAUN",
+      "region": "Lima"
+    },
+    {
+      "nombre": "COLUMBIA",
+      "region": "Lima"
+    },
+    {
+      "nombre": "NINA DESIGN",
+      "region": "Lima"
+    },
+    {
+      "nombre": "RICARDO PALMA",
+      "region": "Lima"
+    },
+    {
+      "nombre": "DE CIENCIAS MULTICULTURALES - ICIM",
+      "region": "Lima"
+    },
+    {
+      "nombre": "EL BUEN PASTOR",
+      "region": "Lima"
+    },
+    {
+      "nombre": "PERUANO DE SISTEMAS SISE",
+      "region": "Lima"
+    },
+    {
+      "nombre": "TOULOUSE LAUTREC",
+      "region": "Lima"
+    },
+    {
+      "nombre": "TECSUP NO.1",
+      "region": "Lima"
+    },
+    {
+      "nombre": "CHARLES CHAPLIN",
+      "region": "Lima"
+    },
+    {
+      "nombre": "SERGIO BERNALES",
+      "region": "Lima"
+    },
+    {
+      "nombre": "ORSON WELLES",
+      "region": "Lima"
+    },
+    {
+      "nombre": "PERUANO DE MARKETING",
+      "region": "Lima"
+    },
+    {
+      "nombre": "INSTITUTO PERUANO DE PUBLICIDAD",
+      "region": "Lima"
+    },
+    {
+      "nombre": "SABIO NACIONAL ANTUNEZ DE MAYOLO",
+      "region": "Lima"
+    },
+    {
+      "nombre": "ELMER FAUCETT",
+      "region": "Lima"
+    },
+    {
+      "nombre": "LIMA INSTITUTE OF TECHNICAL STUDIES S.A.C. - LITS S.A.C.",
+      "region": "Lima"
+    },
+    {
+      "nombre": "INSTITUTO PERUANO DE ARTE Y DISEÑO",
+      "region": "Lima"
+    },
+    {
+      "nombre": "CERTUS",
+      "region": "Lima"
+    },
+    {
+      "nombre": "CENTRO DE ALTOS ESTUDIOS DE LA MODA - CEAM",
+      "region": "Lima"
+    },
+    {
+      "nombre": "DE OPTOMETRIA Y CIENCIAS EUROHISPANO",
+      "region": "Lima"
+    },
+    {
+      "nombre": "SAN IGNACIO DE MONTERRICO - SIDEM",
+      "region": "Lima"
+    },
+    {
+      "nombre": "ALEXANDER VON HUMBOLDT",
+      "region": "Lima"
+    },
+    {
+      "nombre": "DE COMERCIO EXTERIOR",
+      "region": "Lima"
+    },
+    {
+      "nombre": "MARIA ELENA MOYANO",
+      "region": "Lima"
+    },
+    {
+      "nombre": "IDATUR",
+      "region": "Lima"
+    },
+    {
+      "nombre": "ANDRE VESALIO",
+      "region": "Lima"
+    },
+    {
+      "nombre": "COMPLEJO HOSPITALARIO SAN PABLO",
+      "region": "Lima"
+    },
+    {
+      "nombre": "LE CORDON BLEU PERU",
+      "region": "Lima"
+    },
+    {
+      "nombre": "NUESTRA SEÑORA DE MONTSERRAT",
+      "region": "Lima"
+    },
+    {
+      "nombre": "DE INVESTIGACION SOCIOECONOMICO LATINOAMERICANO - INTUR PERU",
+      "region": "Lima"
+    },
+    {
+      "nombre": "MARGARITA CABRERA",
+      "region": "Lima"
+    },
+    {
+      "nombre": "CHIO LECCA",
+      "region": "Lima"
+    },
+    {
+      "nombre": "CORRIENTE ALTERNA",
+      "region": "Lima"
+    },
+    {
+      "nombre": "IBEROAMERICANA",
+      "region": "Lima"
+    },
+    {
+      "nombre": "CENTRO DE LA IMAGEN",
+      "region": "Lima"
+    },
+    {
+      "nombre": "SAN JOSE DEL SUR",
+      "region": "Lima"
+    },
+    {
+      "nombre": "INSTITUTO DE PROFESIONES EMPRESARIALES - INTECI",
+      "region": "Lima"
+    },
+    {
+      "nombre": "ALTA COCINA D'GALLIA",
+      "region": "Lima"
+    },
+    {
+      "nombre": "BSG INSTITUTE",
+      "region": "Lima"
+    },
+    {
+      "nombre": "EDUCACION MEDICA SAN FERNANDO",
+      "region": "Lima"
+    },
+    {
+      "nombre": "ADMINISTRACION Y NEGOCIOS",
+      "region": "Lima"
+    },
+    {
+      "nombre": "DE EMPRENDEDORES",
+      "region": "Lima"
+    },
+    {
+      "nombre": "PERUANO DE CINE Y CREATIVIDAD - EPIC",
+      "region": "Lima"
+    },
+    {
+      "nombre": "MOD'ART PERU",
+      "region": "Lima"
+    },
+    {
+      "nombre": "CETEMIN",
+      "region": "Lima"
+    },
+    {
+      "nombre": "INLOG",
+      "region": "Lima"
+    },
+    {
+      "nombre": "ANSIMAR",
+      "region": "Lima"
+    },
+    {
+      "nombre": "ISCEMP",
+      "region": "Lima"
+    },
+    {
+      "nombre": "ELITEC",
+      "region": "Lima"
+    },
+    {
+      "nombre": "ECOTUR",
+      "region": "Lima"
+    },
+    {
+      "nombre": "INSTITUTO PERUANO DE PUBLICIDAD",
+      "region": "Lima"
+    },
+    {
+      "nombre": "SAN AGUSTIN - ISAT",
+      "region": "Lima"
+    },
+    {
+      "nombre": "INLOG",
+      "region": "Lima"
+    },
+    {
+      "nombre": "PERUANO DE TURISMO Y FINANZAS",
+      "region": "Lima"
+    },
+    {
+      "nombre": "ITAE",
+      "region": "Lima"
+    },
+    {
+      "nombre": "PAUL MULLER",
+      "region": "Lima"
+    },
+    {
+      "nombre": "ALEXANDER VON HUMBOLDT",
+      "region": "Lima"
+    },
+    {
+      "nombre": "TECCEN",
+      "region": "Lima"
+    },
+    {
+      "nombre": "FRANKLIN ROOSEVELT",
+      "region": "Lima"
+    },
+    {
+      "nombre": "DE TECNICAS AGROPECUARIAS - INTAP",
+      "region": "Lima"
+    },
+    {
+      "nombre": "CENTRO DE ALTOS ESTUDIOS DE LA MODA - CEAM",
+      "region": "Lima"
+    },
+    {
+      "nombre": "PERUANO DE MARKETING",
+      "region": "Lima"
+    },
+    {
+      "nombre": "CHARLES CHAPLIN",
+      "region": "Lima"
+    },
+    {
+      "nombre": "PERUANO DE SISTEMAS SISE",
+      "region": "Lima"
+    },
+    {
+      "nombre": "FREDERICK WINSLOW TAYLOR",
+      "region": "Lima"
+    },
+    {
+      "nombre": "SERGIO BERNALES GARCIA",
+      "region": "Lima"
+    },
+    {
+      "nombre": "CONDORAY",
+      "region": "Lima"
+    },
+    {
+      "nombre": "SANTA ROSA DE LIMA",
+      "region": "Lima"
+    },
+    {
+      "nombre": "JOSE SANTOS CHOCANO",
+      "region": "Lima"
+    },
+    {
+      "nombre": "CHANCAY",
+      "region": "Lima"
+    },
+    {
+      "nombre": "CENTRO PERUANO DE ESTUDIOS BANCARIOS - CEPEBAN",
+      "region": "Lima"
+    },
+    {
+      "nombre": "CENTRO DE INVESTIGACION PARA EL DESARROLLO TECNOLOGICO-CIDET",
+      "region": "Lima"
+    },
+    {
+      "nombre": "LATINO BARRANCA",
+      "region": "Lima"
+    },
+    {
+      "nombre": "HUANDO",
+      "region": "Lima"
+    },
+    {
+      "nombre": "SERGIO BERNALES GARCIA DE HUARAL",
+      "region": "Lima"
+    },
+    {
+      "nombre": "VALLE GRANDE",
+      "region": "Lima"
+    },
+    {
+      "nombre": "NICANOR MUJICA ALVAREZ CALDERON",
+      "region": "Lima"
+    },
+    {
+      "nombre": "PERUANO DE TURISMO Y FINANZAS - IPT NORTE",
+      "region": "Lima"
+    },
+    {
+      "nombre": "INSTITUTO PERUANO DE ADMINISTRACION DE EMPRESAS - IPAE IQUITOS",
+      "region": "Loreto"
+    },
+    {
+      "nombre": "JOAQUIN REATEGUI MEDINA",
+      "region": "Loreto"
+    },
+    {
+      "nombre": "SAN JOSE",
+      "region": "Loreto"
+    },
+    {
+      "nombre": "JOSE CARLOS MARIATEGUI",
+      "region": "Moquegua"
+    },
+    {
+      "nombre": "PASCO",
+      "region": "Pasco"
+    },
+    {
+      "nombre": "RICARDO RAMOS PLATA",
+      "region": "Piura"
+    },
+    {
+      "nombre": "NUESTRA SEÑORA DEL CARMEN",
+      "region": "Piura"
+    },
+    {
+      "nombre": "INSTITUTO POLITECNICO",
+      "region": "Piura"
+    },
+    {
+      "nombre": "CETURGH PERU",
+      "region": "Piura"
+    },
+    {
+      "nombre": "SULLANA",
+      "region": "Piura"
+    },
+    {
+      "nombre": "SANTA ANGELA",
+      "region": "Piura"
+    },
+    {
+      "nombre": "ISA INTEGRAL",
+      "region": "Piura"
+    },
+    {
+      "nombre": "DE YUNGUYO",
+      "region": "Puno"
+    },
+    {
+      "nombre": "DE CRUCERO",
+      "region": "Puno"
+    },
+    {
+      "nombre": "PEDRO VILCAPAZA",
+      "region": "Puno"
+    },
+    {
+      "nombre": "TECNOTRONIC",
+      "region": "Puno"
+    },
+    {
+      "nombre": "BELLAVISTA",
+      "region": "San Martín"
+    },
+    {
+      "nombre": "AMAZONICO",
+      "region": "San Martín"
+    },
+    {
+      "nombre": "SAN LUCAS",
+      "region": "San Martín"
+    },
+    {
+      "nombre": "CIRO ALEGRIA",
+      "region": "San Martín"
+    },
+    {
+      "nombre": "FRANCISCO DE PAULA GONZALES VIGIL",
+      "region": "Tacna"
+    },
+    {
+      "nombre": "DE LA EMPRESA",
+      "region": "Tacna"
+    },
+    {
+      "nombre": "JOHN VON NEUMANN",
+      "region": "Tacna"
+    },
+    {
+      "nombre": "CAP. FAP JOSE ABELARDO QUIÑONES",
+      "region": "Tumbes"
+    },
+    {
+      "nombre": "TEC",
+      "region": "Ucayali"
+    },
+    {
+      "nombre": "PADRE ABAD",
+      "region": "Ucayali"
+    }
+  ],
+  "carreras_info": [
+    {
+      "carrera": "Derecho",
+      "descripcion": "Carrera con podcast de orientacion vocacional donde estudiantes cuentan experiencias reales: que se aprende, que los sorprendio y consejos para quien va a decidir."
+    },
+    {
+      "carrera": "Administracion de Empresas",
+      "descripcion": "Carrera con podcast de orientacion vocacional donde estudiantes cuentan experiencias reales: que se aprende, que los sorprendio y consejos para quien va a decidir."
+    },
+    {
+      "carrera": "Administracion y Finanzas",
+      "descripcion": "Carrera con podcast de orientacion vocacional donde estudiantes cuentan experiencias reales: que se aprende, que los sorprendio y consejos para quien va a decidir."
+    },
+    {
+      "carrera": "Administracion y Negocios Internacionales",
+      "descripcion": "Carrera con podcast de orientacion vocacional donde estudiantes cuentan experiencias reales: que se aprende, que los sorprendio y consejos para quien va a decidir."
+    },
+    {
+      "carrera": "Marketing",
+      "descripcion": "Carrera con podcast de orientacion vocacional donde estudiantes cuentan experiencias reales: que se aprende, que los sorprendio y consejos para quien va a decidir."
+    },
+    {
+      "carrera": "Economia",
+      "descripcion": "Carrera con podcast de orientacion vocacional donde estudiantes cuentan experiencias reales: que se aprende, que los sorprendio y consejos para quien va a decidir."
+    },
+    {
+      "carrera": "Ingenieria Civil",
+      "descripcion": "Carrera con podcast de orientacion vocacional donde estudiantes cuentan experiencias reales: que se aprende, que los sorprendio y consejos para quien va a decidir."
+    },
+    {
+      "carrera": "Arquitectura",
+      "descripcion": "Carrera con podcast de orientacion vocacional donde estudiantes cuentan experiencias reales: que se aprende, que los sorprendio y consejos para quien va a decidir."
+    },
+    {
+      "carrera": "Ciencias de la Comunicacion",
+      "descripcion": "Carrera con podcast de orientacion vocacional donde estudiantes cuentan experiencias reales: que se aprende, que los sorprendio y consejos para quien va a decidir."
+    },
+    {
+      "carrera": "Ciencia Politica",
+      "descripcion": "Carrera con podcast de orientacion vocacional donde estudiantes cuentan experiencias reales: que se aprende, que los sorprendio y consejos para quien va a decidir."
+    },
+    {
+      "carrera": "Psicologia",
+      "descripcion": "Carrera con podcast de orientacion vocacional donde estudiantes cuentan experiencias reales: que se aprende, que los sorprendio y consejos para quien va a decidir."
+    },
+    {
+      "carrera": "Enfermeria",
+      "descripcion": "Carrera con podcast de orientacion vocacional donde estudiantes cuentan experiencias reales: que se aprende, que los sorprendio y consejos para quien va a decidir."
+    },
+    {
+      "carrera": "Odontologia",
+      "descripcion": "Carrera con podcast de orientacion vocacional donde estudiantes cuentan experiencias reales: que se aprende, que los sorprendio y consejos para quien va a decidir."
+    },
+    {
+      "carrera": "Fotografia",
+      "descripcion": "Carrera con podcast de orientacion vocacional donde estudiantes cuentan experiencias reales: que se aprende, que los sorprendio y consejos para quien va a decidir."
+    },
+    {
+      "carrera": "Pasteleria",
+      "descripcion": "Carrera con podcast de orientacion vocacional donde estudiantes cuentan experiencias reales: que se aprende, que los sorprendio y consejos para quien va a decidir."
+    }
+  ],
+  "carreras_futuro": [
+    {
+      "carrera": "Blockchain",
+      "por_que": "Red segura que guarda datos y transacciones en cadenas de bloques; permite criptomonedas y contratos inteligentes sin intermediarios. Tecnologia emergente con alta proyeccion.",
+      "fuente": "MTPE - Mi Carrera, seccion Carreras del futuro (basado en Santander Open Academy, 2025)"
+    },
+    {
+      "carrera": "Ciberseguridad y seguridad de la informacion",
+      "por_que": "Protege computadoras, redes y sistemas frente a ataques y accesos no autorizados; demanda creciente por la digitalizacion.",
+      "fuente": "MTPE - Mi Carrera, seccion Carreras del futuro (basado en Santander Open Academy, 2025)"
+    },
+    {
+      "carrera": "Energias renovables",
+      "por_que": "Genera energia limpia y sostenible a partir del sol, viento, agua y biomasa; clave frente al cambio climatico y la transicion energetica.",
+      "fuente": "MTPE - Mi Carrera, seccion Carreras del futuro (basado en Santander Open Academy, 2025)"
+    },
+    {
+      "carrera": "Especialista en Inteligencia Artificial",
+      "por_que": "Ensenia a las maquinas a aprender y analizar datos para automatizar tareas y apoyar la toma de decisiones; una de las areas de mayor crecimiento.",
+      "fuente": "MTPE - Mi Carrera, seccion Carreras del futuro (basado en Santander Open Academy, 2025)"
+    },
+    {
+      "carrera": "Cloud Computing",
+      "por_que": "Usa internet (la nube) para guardar datos y trabajar desde cualquier lugar, optimizando recursos y costos de las empresas.",
+      "fuente": "MTPE - Mi Carrera, seccion Carreras del futuro (basado en Santander Open Academy, 2025)"
+    },
+    {
+      "carrera": "Nanotecnologia",
+      "por_que": "Manipula la materia a escala atomica para crear materiales y dispositivos con aplicaciones en salud, energia y medio ambiente.",
+      "fuente": "MTPE - Mi Carrera, seccion Carreras del futuro (basado en Santander Open Academy, 2025)"
+    },
+    {
+      "carrera": "Medicina genomica",
+      "por_que": "Usa el ADN para prevenir y tratar enfermedades con diagnosticos y terapias personalizadas; transformara la medicina.",
+      "fuente": "MTPE - Mi Carrera, seccion Carreras del futuro (basado en Santander Open Academy, 2025)"
+    },
+    {
+      "carrera": "Mecatronica",
+      "por_que": "Une mecanica, electronica e informatica para crear robots y sistemas inteligentes; clave para la industria y la automatizacion.",
+      "fuente": "MTPE - Mi Carrera, seccion Carreras del futuro (basado en Santander Open Academy, 2025)"
+    },
+    {
+      "carrera": "Ingenieria Molecular",
+      "por_que": "Combina biologia y quimica para crear materiales, terapias y tecnologias sostenibles a nivel molecular.",
+      "fuente": "MTPE - Mi Carrera, seccion Carreras del futuro (basado en Santander Open Academy, 2025)"
+    },
+    {
+      "carrera": "Cuidados Medicos",
+      "por_que": "Atencion en salud para prevenir y tratar enfermedades, potenciada por tecnologia y telemedicina para un cuidado mas accesible.",
+      "fuente": "MTPE - Mi Carrera, seccion Carreras del futuro (basado en Santander Open Academy, 2025)"
+    },
+    {
+      "carrera": "Ciencias Ambientales",
+      "por_que": "Busca soluciones sostenibles para conservar la biodiversidad y enfrentar el cambio climatico.",
+      "fuente": "MTPE - Mi Carrera, seccion Carreras del futuro (basado en Santander Open Academy, 2025)"
+    },
+    {
+      "carrera": "Biotecnologia",
+      "por_que": "Une biologia y tecnologia para crear medicinas, alimentos y energias limpias que mejoran la vida y cuidan el planeta.",
+      "fuente": "MTPE - Mi Carrera, seccion Carreras del futuro (basado en Santander Open Academy, 2025)"
+    },
+    {
+      "carrera": "Biomedicina",
+      "por_que": "Une biologia y medicina para crear terapias personalizadas y tecnologias que transforman la prevencion y el cuidado de la salud.",
+      "fuente": "MTPE - Mi Carrera, seccion Carreras del futuro (basado en Santander Open Academy, 2025)"
+    }
+  ],
+  "asesoria_mtpe": {
+    "que_es": "El MTPE ofrece Orientacion Vocacional e Informacion Ocupacional (referida como SOVIO / orientacion vocacional): una asesoria personalizada y gratuita, virtual o presencial, donde un orientador ayuda al joven a informarse, revisar sus intereses y ordenar sus opciones de estudio y carrera. No decide por el estudiante ni garantiza empleo; sirve para aclarar dudas sobre requisitos, rutas (tecnica, universitaria, CETPRO, certificaciones), tiempos y donde buscar informacion confiable.",
+    "como_acceder": "Se saca cita en linea en el sistema de citas del MTPE (Extranet): 1) Ingresar al sistema de citas. 2) Elegir la sede/zona de atencion segun tu region. 3) Seleccionar el servicio de orientacion vocacional / informacion ocupacional. 4) Elegir fecha y hora disponibles. 5) Registrar tus datos (DNI, nombres, telefono, correo). 6) Confirmar la reserva. Si es virtual, conectate con puntualidad y revisa tu correo y la bandeja de spam; si es presencial, lleva tu DNI y 3-5 preguntas anotadas.",
+    "enlace": "https://extranet.trabajo.gob.pe/extranet/web/citas"
+  },
+  "salarios_region": {
+    "fuente": "Mi Carrera — MTPE (Planilla Electrónica). Ingreso promedio mensual, referencial.",
+    "enlace": "https://micarrera.trabajo.gob.pe",
+    "regiones": [
+      "Amazonas",
+      "Áncash",
+      "Apurímac",
+      "Arequipa",
+      "Ayacucho",
+      "Cajamarca",
+      "Callao",
+      "Cusco",
+      "Huancavelica",
+      "Huánuco",
+      "Ica",
+      "Junín",
+      "La Libertad",
+      "Lambayeque",
+      "Lima",
+      "Lima Provincias",
+      "Loreto",
+      "Madre de Dios",
+      "Moquegua",
+      "Pasco",
+      "Piura",
+      "Puno",
+      "San Martín",
+      "Tacna",
+      "Tumbes",
+      "Ucayali"
+    ],
+    "alias": {
+      "tecnico en mineria, metalurgia y petroleo": "tecnico en minera, metalurgia y petroleo"
+    },
+    "carreras": {
+      "economia": {
+        "n": "ECONOMÍA",
+        "r": {
+          "Huánuco": [
+            2639,
+            3720
+          ],
+          "Ica": [
+            2458,
+            5200
+          ],
+          "Junín": [
+            2608,
+            5502
+          ],
+          "La Libertad": [
+            2232,
+            5263
+          ],
+          "Lambayeque": [
+            2334,
+            4539
+          ],
+          "Lima": [
+            4526,
+            11726
+          ],
+          "Loreto": [
+            2663,
+            5784
+          ],
+          "Pasco": [
+            2332,
+            4411
+          ],
+          "Piura": [
+            2485,
+            5326
+          ],
+          "Puno": [
+            2187,
+            5864
+          ],
+          "San Martín": [
+            2439,
+            5589
+          ],
+          "Tacna": [
+            2147,
+            4292
+          ],
+          "Tumbes": [
+            2217,
+            4461
+          ],
+          "Ucayali": [
+            2695,
+            4967
+          ],
+          "Lima Provincias": [
+            2300,
+            4686
+          ],
+          "Nacional": [
+            4017,
+            9505
+          ],
+          "Áncash": [
+            2192,
+            4867
+          ],
+          "Arequipa": [
+            2222,
+            5361
+          ],
+          "Cajamarca": [
+            2108,
+            5373
+          ],
+          "Callao": [
+            4031,
+            10717
+          ],
+          "Cusco": [
+            2355,
+            5317
+          ]
+        }
+      },
+      "contabilidad y finanzas": {
+        "n": "CONTABILIDAD Y FINANZAS",
+        "r": {
+          "Huánuco": [
+            1951,
+            3281
+          ],
+          "Ica": [
+            1787,
+            3123
+          ],
+          "Junín": [
+            2176,
+            4126
+          ],
+          "La Libertad": [
+            2038,
+            4020
+          ],
+          "Lambayeque": [
+            1929,
+            3718
+          ],
+          "Lima": [
+            2206,
+            3442
+          ],
+          "Loreto": [
+            2495,
+            2770
+          ],
+          "Madre de Dios": [
+            2160,
+            3607
+          ],
+          "Moquegua": [
+            1889,
+            3216
+          ],
+          "Pasco": [
+            2279,
+            3959
+          ],
+          "Piura": [
+            2076,
+            4248
+          ],
+          "Puno": [
+            2077,
+            3525
+          ],
+          "San Martín": [
+            2025,
+            3627
+          ],
+          "Tacna": [
+            1975,
+            3549
+          ],
+          "Tumbes": [
+            1886,
+            3767
+          ],
+          "Ucayali": [
+            2247,
+            3825
+          ],
+          "Lima Provincias": [
+            1987,
+            2760
+          ],
+          "Nacional": [
+            2352,
+            3520
+          ],
+          "Amazonas": [
+            2282,
+            3401
+          ],
+          "Áncash": [
+            1925,
+            3619
+          ],
+          "Apurímac": [
+            2308,
+            3981
+          ],
+          "Arequipa": [
+            2062,
+            4280
+          ],
+          "Ayacucho": [
+            2144,
+            3972
+          ],
+          "Cajamarca": [
+            2130,
+            3742
+          ],
+          "Callao": [
+            1993,
+            3695
+          ],
+          "Cusco": [
+            2269,
+            4175
+          ],
+          "Huancavelica": [
+            2113,
+            4852
+          ]
+        }
+      },
+      "ingenieria civil": {
+        "n": "INGENIERÍA CIVIL",
+        "r": {
+          "Huánuco": [
+            2373,
+            6028
+          ],
+          "Ica": [
+            3670,
+            7135
+          ],
+          "Junín": [
+            2636,
+            6750
+          ],
+          "La Libertad": [
+            2796,
+            5812
+          ],
+          "Lambayeque": [
+            2840,
+            5620
+          ],
+          "Lima": [
+            4152,
+            10621
+          ],
+          "Moquegua": [
+            4617,
+            12480
+          ],
+          "Pasco": [
+            5103,
+            10226
+          ],
+          "Piura": [
+            3639,
+            7932
+          ],
+          "Puno": [
+            2939,
+            5080
+          ],
+          "San Martín": [
+            2482,
+            5477
+          ],
+          "Tacna": [
+            3168,
+            6316
+          ],
+          "Tumbes": [
+            5455,
+            12574
+          ],
+          "Ucayali": [
+            2948,
+            7184
+          ],
+          "Lima Provincias": [
+            3884,
+            9427
+          ],
+          "Nacional": [
+            3966,
+            9124
+          ],
+          "Amazonas": [
+            4106,
+            6603
+          ],
+          "Áncash": [
+            3850,
+            9615
+          ],
+          "Apurímac": [
+            4205,
+            9508
+          ],
+          "Arequipa": [
+            3613,
+            8481
+          ],
+          "Ayacucho": [
+            3652,
+            8232
+          ],
+          "Cajamarca": [
+            3204,
+            8619
+          ],
+          "Callao": [
+            3575,
+            9842
+          ],
+          "Cusco": [
+            3102,
+            7634
+          ]
+        }
+      },
+      "ciencias de la computacion": {
+        "n": "CIENCIAS DE LA COMPUTACIÓN",
+        "r": {
+          "Huánuco": [
+            2181,
+            3147
+          ],
+          "Ica": [
+            2256,
+            3766
+          ],
+          "Junín": [
+            2647,
+            4142
+          ],
+          "La Libertad": [
+            2174,
+            3365
+          ],
+          "Lambayeque": [
+            1906,
+            3095
+          ],
+          "Lima": [
+            3968,
+            5062
+          ],
+          "Piura": [
+            1669,
+            2973
+          ],
+          "Puno": [
+            2394,
+            3375
+          ],
+          "San Martín": [
+            1972,
+            2843
+          ],
+          "Nacional": [
+            3191,
+            4467
+          ],
+          "Arequipa": [
+            1931,
+            3870
+          ],
+          "Ayacucho": [
+            2108,
+            3713
+          ],
+          "Cajamarca": [
+            2307,
+            3258
+          ],
+          "Cusco": [
+            2470,
+            3723
+          ]
+        }
+      },
+      "educacion secundaria": {
+        "n": "EDUCACIÓN SECUNDARIA",
+        "r": {
+          "Huánuco": [
+            2027,
+            2283
+          ],
+          "Junín": [
+            1877,
+            2946
+          ],
+          "La Libertad": [
+            1916,
+            3209
+          ],
+          "Lima": [
+            2308,
+            4090
+          ],
+          "Piura": [
+            1895,
+            3433
+          ],
+          "Puno": [
+            1876,
+            2774
+          ],
+          "Nacional": [
+            2396,
+            3932
+          ],
+          "Áncash": [
+            1812,
+            2824
+          ]
+        }
+      },
+      "administracion de empresas": {
+        "n": "ADMINISTRACIÓN DE EMPRESAS",
+        "r": {
+          "Huánuco": [
+            2003,
+            4031
+          ],
+          "Ica": [
+            2210,
+            4859
+          ],
+          "Junín": [
+            2353,
+            4570
+          ],
+          "La Libertad": [
+            2252,
+            4990
+          ],
+          "Lambayeque": [
+            2126,
+            4453
+          ],
+          "Lima": [
+            2370,
+            4652
+          ],
+          "Loreto": [
+            2028,
+            3202
+          ],
+          "Madre de Dios": [
+            3142,
+            5269
+          ],
+          "Moquegua": [
+            2594,
+            6049
+          ],
+          "Pasco": [
+            2651,
+            5962
+          ],
+          "Piura": [
+            2178,
+            3654
+          ],
+          "Puno": [
+            2099,
+            4922
+          ],
+          "San Martín": [
+            1859,
+            3943
+          ],
+          "Tacna": [
+            2072,
+            4063
+          ],
+          "Tumbes": [
+            2173,
+            4234
+          ],
+          "Ucayali": [
+            2392,
+            4196
+          ],
+          "Lima Provincias": [
+            2447,
+            5771
+          ],
+          "Nacional": [
+            2395,
+            4449
+          ],
+          "Amazonas": [
+            2234,
+            3797
+          ],
+          "Áncash": [
+            2118,
+            5891
+          ],
+          "Apurímac": [
+            2587,
+            5132
+          ],
+          "Arequipa": [
+            2282,
+            5510
+          ],
+          "Ayacucho": [
+            2049,
+            3211
+          ],
+          "Cajamarca": [
+            2197,
+            5155
+          ],
+          "Callao": [
+            2252,
+            4297
+          ],
+          "Cusco": [
+            2248,
+            4982
+          ],
+          "Huancavelica": [
+            2131,
+            5285
+          ]
+        }
+      },
+      "derecho": {
+        "n": "DERECHO",
+        "r": {
+          "Huánuco": [
+            1697,
+            2947
+          ],
+          "Ica": [
+            2309,
+            5323
+          ],
+          "Junín": [
+            2113,
+            4634
+          ],
+          "La Libertad": [
+            1935,
+            4456
+          ],
+          "Lambayeque": [
+            2012,
+            3793
+          ],
+          "Lima": [
+            3622,
+            10351
+          ],
+          "Piura": [
+            2400,
+            5281
+          ],
+          "Puno": [
+            1952,
+            3776
+          ],
+          "San Martín": [
+            2188,
+            3494
+          ],
+          "Tacna": [
+            1978,
+            4125
+          ],
+          "Ucayali": [
+            2453,
+            3694
+          ],
+          "Lima Provincias": [
+            2403,
+            5376
+          ],
+          "Nacional": [
+            4113,
+            8465
+          ],
+          "Áncash": [
+            1596,
+            3628
+          ],
+          "Arequipa": [
+            2330,
+            5581
+          ],
+          "Cajamarca": [
+            2620,
+            4962
+          ],
+          "Callao": [
+            3241,
+            9843
+          ],
+          "Cusco": [
+            2382,
+            4896
+          ]
+        }
+      },
+      "psicologia": {
+        "n": "PSICOLOGÍA",
+        "r": {
+          "Huánuco": [
+            1568,
+            1975
+          ],
+          "Ica": [
+            2313,
+            5212
+          ],
+          "Junín": [
+            1618,
+            3345
+          ],
+          "La Libertad": [
+            2010,
+            3668
+          ],
+          "Lambayeque": [
+            1988,
+            3247
+          ],
+          "Lima": [
+            2534,
+            5648
+          ],
+          "Loreto": [
+            2071,
+            3494
+          ],
+          "Moquegua": [
+            2601,
+            9884
+          ],
+          "Piura": [
+            2230,
+            3723
+          ],
+          "Puno": [
+            1710,
+            3354
+          ],
+          "San Martín": [
+            2177,
+            3426
+          ],
+          "Tacna": [
+            1632,
+            3026
+          ],
+          "Lima Provincias": [
+            2642,
+            4911
+          ],
+          "Nacional": [
+            2824,
+            5033
+          ],
+          "Áncash": [
+            1996,
+            3654
+          ],
+          "Arequipa": [
+            1908,
+            3929
+          ],
+          "Ayacucho": [
+            1892,
+            3959
+          ],
+          "Cajamarca": [
+            2371,
+            3990
+          ],
+          "Callao": [
+            2655,
+            5459
+          ],
+          "Cusco": [
+            2057,
+            3702
+          ]
+        }
+      },
+      "educacion inicial": {
+        "n": "EDUCACIÓN INICIAL",
+        "r": {
+          "Huánuco": [
+            1466,
+            2031
+          ],
+          "Ica": [
+            1421,
+            2432
+          ],
+          "Junín": [
+            1696,
+            2327
+          ],
+          "La Libertad": [
+            1675,
+            2569
+          ],
+          "Lambayeque": [
+            1743,
+            2613
+          ],
+          "Lima": [
+            1475,
+            2422
+          ],
+          "Piura": [
+            1767,
+            2802
+          ],
+          "Puno": [
+            1429,
+            2121
+          ],
+          "Tacna": [
+            1455,
+            1862
+          ],
+          "Lima Provincias": [
+            1634,
+            2328
+          ],
+          "Nacional": [
+            2068,
+            3408
+          ],
+          "Áncash": [
+            1637,
+            2062
+          ],
+          "Arequipa": [
+            2145,
+            3060
+          ],
+          "Cusco": [
+            1821,
+            2343
+          ]
+        }
+      },
+      "tecnico en minera, metalurgia y petroleo": {
+        "n": "TÉCNICO EN MINERA, METALURGIA Y PETRÓLEO",
+        "r": {
+          "Ica": [
+            8604,
+            14155
+          ],
+          "Lima": [
+            6235,
+            8480
+          ],
+          "Nacional": [
+            6804,
+            9915
+          ]
+        }
+      },
+      "tecnico electricista": {
+        "n": "TÉCNICO ELECTRICISTA",
+        "r": {
+          "Ica": [
+            6107,
+            6723
+          ],
+          "La Libertad": [
+            2436,
+            5029
+          ],
+          "Lima": [
+            3128,
+            6278
+          ],
+          "Nacional": [
+            3757,
+            6267
+          ],
+          "Arequipa": [
+            4105,
+            6721
+          ],
+          "Callao": [
+            2954,
+            5354
+          ]
+        }
+      },
+      "geologia": {
+        "n": "GEOLOGÍA",
+        "r": {
+          "Ica": [
+            5074,
+            10528
+          ],
+          "La Libertad": [
+            4235,
+            10964
+          ],
+          "Lima": [
+            4043,
+            12049
+          ],
+          "Pasco": [
+            4342,
+            10700
+          ],
+          "Puno": [
+            3591,
+            8998
+          ],
+          "Lima Provincias": [
+            5265,
+            11479
+          ],
+          "Nacional": [
+            4168,
+            10792
+          ],
+          "Áncash": [
+            3136,
+            12634
+          ],
+          "Arequipa": [
+            4127,
+            9236
+          ],
+          "Cajamarca": [
+            3838,
+            10968
+          ],
+          "Callao": [
+            4105,
+            7252
+          ],
+          "Cusco": [
+            4462,
+            9168
+          ]
+        }
+      },
+      "ingenieria minera, metalurgia y petroleo": {
+        "n": "INGENIERÍA MINERA, METALURGIA Y PETRÓLEO",
+        "r": {
+          "Ica": [
+            4404,
+            10326
+          ],
+          "Junín": [
+            3922,
+            10380
+          ],
+          "La Libertad": [
+            4088,
+            9063
+          ],
+          "Lima": [
+            4270,
+            11309
+          ],
+          "Moquegua": [
+            6082,
+            11804
+          ],
+          "Pasco": [
+            4761,
+            10499
+          ],
+          "Piura": [
+            2841,
+            7626
+          ],
+          "Puno": [
+            3309,
+            8733
+          ],
+          "Tacna": [
+            5136,
+            9077
+          ],
+          "Lima Provincias": [
+            3848,
+            10962
+          ],
+          "Nacional": [
+            4118,
+            10421
+          ],
+          "Áncash": [
+            4466,
+            13856
+          ],
+          "Apurímac": [
+            4210,
+            11087
+          ],
+          "Arequipa": [
+            4032,
+            9472
+          ],
+          "Ayacucho": [
+            3923,
+            9888
+          ],
+          "Cajamarca": [
+            4318,
+            10486
+          ],
+          "Callao": [
+            2877,
+            7410
+          ],
+          "Cusco": [
+            4859,
+            11923
+          ],
+          "Huancavelica": [
+            3909,
+            11861
+          ]
+        }
+      },
+      "ingenieria mecanica": {
+        "n": "INGENIERÍA MECÁNICA",
+        "r": {
+          "Ica": [
+            4324,
+            9117
+          ],
+          "Junín": [
+            3280,
+            8580
+          ],
+          "La Libertad": [
+            2994,
+            6861
+          ],
+          "Lambayeque": [
+            3012,
+            5087
+          ],
+          "Lima": [
+            4177,
+            10364
+          ],
+          "Moquegua": [
+            4608,
+            10346
+          ],
+          "Pasco": [
+            6289,
+            10677
+          ],
+          "Piura": [
+            4442,
+            8747
+          ],
+          "Puno": [
+            3343,
+            6465
+          ],
+          "San Martín": [
+            3165,
+            5366
+          ],
+          "Tacna": [
+            4774,
+            7876
+          ],
+          "Lima Provincias": [
+            4123,
+            10922
+          ],
+          "Nacional": [
+            4038,
+            9700
+          ],
+          "Áncash": [
+            4304,
+            11796
+          ],
+          "Apurímac": [
+            3736,
+            10796
+          ],
+          "Arequipa": [
+            3477,
+            8763
+          ],
+          "Cajamarca": [
+            4078,
+            9300
+          ],
+          "Callao": [
+            4035,
+            9375
+          ],
+          "Cusco": [
+            5340,
+            10949
+          ]
+        }
+      },
+      "ingenieria electronica": {
+        "n": "INGENIERÍA ELECTRÓNICA",
+        "r": {
+          "Ica": [
+            4003,
+            9406
+          ],
+          "La Libertad": [
+            2923,
+            5518
+          ],
+          "Lima": [
+            3710,
+            9082
+          ],
+          "Moquegua": [
+            4495,
+            11635
+          ],
+          "Piura": [
+            2448,
+            5899
+          ],
+          "Lima Provincias": [
+            4130,
+            9540
+          ],
+          "Nacional": [
+            3647,
+            8793
+          ],
+          "Arequipa": [
+            2943,
+            8762
+          ],
+          "Callao": [
+            3394,
+            8232
+          ]
+        }
+      },
+      "tecnico mecanica": {
+        "n": "TÉCNICO MECÁNICA",
+        "r": {
+          "Ica": [
+            3868,
+            5491
+          ],
+          "Junín": [
+            3026,
+            6937
+          ],
+          "La Libertad": [
+            2455,
+            4527
+          ],
+          "Lambayeque": [
+            1937,
+            2630
+          ],
+          "Lima": [
+            2783,
+            5471
+          ],
+          "Moquegua": [
+            3434,
+            6651
+          ],
+          "Piura": [
+            2543,
+            3958
+          ],
+          "Puno": [
+            2706,
+            3598
+          ],
+          "San Martín": [
+            2697,
+            4779
+          ],
+          "Tacna": [
+            3085,
+            7030
+          ],
+          "Ucayali": [
+            1918,
+            4122
+          ],
+          "Lima Provincias": [
+            2305,
+            6888
+          ],
+          "Nacional": [
+            2858,
+            5422
+          ],
+          "Áncash": [
+            2305,
+            9678
+          ],
+          "Arequipa": [
+            2919,
+            6237
+          ],
+          "Ayacucho": [
+            2477,
+            4398
+          ],
+          "Callao": [
+            3588,
+            4854
+          ],
+          "Cusco": [
+            3936,
+            5468
+          ]
+        }
+      },
+      "trabajo social": {
+        "n": "TRABAJO SOCIAL",
+        "r": {
+          "Ica": [
+            3828,
+            5226
+          ],
+          "Junín": [
+            2483,
+            4182
+          ],
+          "La Libertad": [
+            2597,
+            3795
+          ],
+          "Lambayeque": [
+            2559,
+            3597
+          ],
+          "Lima": [
+            2832,
+            5075
+          ],
+          "Pasco": [
+            3468,
+            6849
+          ],
+          "Puno": [
+            2282,
+            3900
+          ],
+          "Lima Provincias": [
+            2935,
+            4291
+          ],
+          "Nacional": [
+            3003,
+            5050
+          ],
+          "Áncash": [
+            3305,
+            6252
+          ],
+          "Arequipa": [
+            2095,
+            4060
+          ],
+          "Ayacucho": [
+            2583,
+            3536
+          ],
+          "Callao": [
+            2740,
+            4647
+          ]
+        }
+      },
+      "quimica": {
+        "n": "QUÍMICA",
+        "r": {
+          "Ica": [
+            3648,
+            7679
+          ],
+          "Junín": [
+            2648,
+            8253
+          ],
+          "La Libertad": [
+            2947,
+            7057
+          ],
+          "Lambayeque": [
+            2499,
+            4166
+          ],
+          "Lima": [
+            2355,
+            3878
+          ],
+          "Moquegua": [
+            5747,
+            14423
+          ],
+          "Piura": [
+            3019,
+            6682
+          ],
+          "Puno": [
+            3187,
+            4792
+          ],
+          "Lima Provincias": [
+            3035,
+            7661
+          ],
+          "Nacional": [
+            3127,
+            7460
+          ],
+          "Áncash": [
+            4351,
+            10174
+          ],
+          "Arequipa": [
+            2654,
+            6258
+          ],
+          "Ayacucho": [
+            3757,
+            7385
+          ],
+          "Callao": [
+            2649,
+            6677
+          ],
+          "Cusco": [
+            3080,
+            7897
+          ]
+        }
+      },
+      "tecnico electronica": {
+        "n": "TÉCNICO ELECTRÓNICA",
+        "r": {
+          "Ica": [
+            3490,
+            5694
+          ],
+          "Lima": [
+            2671,
+            4709
+          ],
+          "Nacional": [
+            3021,
+            4893
+          ],
+          "Callao": [
+            2205,
+            4035
+          ]
+        }
+      },
+      "ingenieria industrial": {
+        "n": "INGENIERÍA INDUSTRIAL",
+        "r": {
+          "Ica": [
+            3311,
+            8709
+          ],
+          "Junín": [
+            2571,
+            7719
+          ],
+          "La Libertad": [
+            2626,
+            6123
+          ],
+          "Lambayeque": [
+            2730,
+            4995
+          ],
+          "Lima": [
+            4248,
+            10257
+          ],
+          "Moquegua": [
+            4124,
+            9370
+          ],
+          "Pasco": [
+            4286,
+            9484
+          ],
+          "Piura": [
+            3052,
+            6497
+          ],
+          "Puno": [
+            3239,
+            6199
+          ],
+          "San Martín": [
+            3148,
+            5442
+          ],
+          "Tacna": [
+            3768,
+            7264
+          ],
+          "Lima Provincias": [
+            3283,
+            7496
+          ],
+          "Nacional": [
+            3867,
+            9287
+          ],
+          "Áncash": [
+            2975,
+            8458
+          ],
+          "Apurímac": [
+            3819,
+            10077
+          ],
+          "Arequipa": [
+            2775,
+            6484
+          ],
+          "Ayacucho": [
+            4497,
+            7143
+          ],
+          "Cajamarca": [
+            2836,
+            7287
+          ],
+          "Callao": [
+            4007,
+            9796
+          ],
+          "Cusco": [
+            3360,
+            7562
+          ]
+        }
+      },
+      "ecologia y medio ambiente": {
+        "n": "ECOLOGÍA Y MEDIO AMBIENTE",
+        "r": {
+          "Ica": [
+            3279,
+            5694
+          ],
+          "Junín": [
+            2609,
+            5509
+          ],
+          "La Libertad": [
+            2591,
+            4976
+          ],
+          "Lambayeque": [
+            2556,
+            4290
+          ],
+          "Lima": [
+            3123,
+            6479
+          ],
+          "Loreto": [
+            2794,
+            4087
+          ],
+          "Moquegua": [
+            3764,
+            6983
+          ],
+          "Pasco": [
+            2926,
+            6590
+          ],
+          "Piura": [
+            2806,
+            5983
+          ],
+          "Puno": [
+            2473,
+            5260
+          ],
+          "San Martín": [
+            2444,
+            4066
+          ],
+          "Tacna": [
+            2922,
+            6608
+          ],
+          "Ucayali": [
+            2480,
+            4460
+          ],
+          "Lima Provincias": [
+            3166,
+            6692
+          ],
+          "Nacional": [
+            3023,
+            6313
+          ],
+          "Áncash": [
+            3416,
+            8293
+          ],
+          "Apurímac": [
+            2770,
+            6308
+          ],
+          "Arequipa": [
+            2496,
+            4700
+          ],
+          "Cajamarca": [
+            3011,
+            7741
+          ],
+          "Callao": [
+            2580,
+            5312
+          ],
+          "Cusco": [
+            3255,
+            7752
+          ]
+        }
+      },
+      "ciencias de la comunicacion": {
+        "n": "CIENCIAS DE LA COMUNICACIÓN",
+        "r": {
+          "Ica": [
+            3215,
+            4071
+          ],
+          "Junín": [
+            1736,
+            4462
+          ],
+          "La Libertad": [
+            2163,
+            4036
+          ],
+          "Lambayeque": [
+            2027,
+            3514
+          ],
+          "Lima": [
+            2752,
+            5068
+          ],
+          "Piura": [
+            2472,
+            4137
+          ],
+          "Puno": [
+            2268,
+            3931
+          ],
+          "San Martín": [
+            1912,
+            3271
+          ],
+          "Tacna": [
+            1731,
+            3731
+          ],
+          "Lima Provincias": [
+            2655,
+            4178
+          ],
+          "Nacional": [
+            2286,
+            4972
+          ],
+          "Áncash": [
+            1940,
+            3730
+          ],
+          "Arequipa": [
+            2107,
+            4464
+          ],
+          "Callao": [
+            3198,
+            8337
+          ],
+          "Cusco": [
+            2960,
+            4659
+          ]
+        }
+      },
+      "arquitectura y urbanismo": {
+        "n": "ARQUITECTURA Y URBANISMO",
+        "r": {
+          "Ica": [
+            3186,
+            4642
+          ],
+          "Junín": [
+            1922,
+            3616
+          ],
+          "La Libertad": [
+            1896,
+            3618
+          ],
+          "Lambayeque": [
+            2375,
+            3749
+          ],
+          "Lima": [
+            2881,
+            5757
+          ],
+          "Piura": [
+            3017,
+            5114
+          ],
+          "San Martín": [
+            1629,
+            2883
+          ],
+          "Nacional": [
+            2881,
+            5776
+          ],
+          "Áncash": [
+            3618,
+            5180
+          ],
+          "Arequipa": [
+            2204,
+            4452
+          ],
+          "Cajamarca": [
+            1959,
+            6679
+          ],
+          "Callao": [
+            3089,
+            7061
+          ],
+          "Cusco": [
+            3450,
+            5171
+          ]
+        }
+      },
+      "medicina": {
+        "n": "MEDICINA",
+        "r": {
+          "Ica": [
+            2958,
+            6428
+          ],
+          "La Libertad": [
+            2392,
+            4041
+          ],
+          "Lambayeque": [
+            3452,
+            3991
+          ],
+          "Lima": [
+            3897,
+            7013
+          ],
+          "Piura": [
+            3454,
+            4234
+          ],
+          "Nacional": [
+            7030,
+            8355
+          ],
+          "Arequipa": [
+            3553,
+            5213
+          ],
+          "Cusco": [
+            3432,
+            4070
+          ]
+        }
+      },
+      "agropecuaria": {
+        "n": "AGROPECUARIA",
+        "r": {
+          "Ica": [
+            1967,
+            3970
+          ],
+          "Junín": [
+            2290,
+            4704
+          ],
+          "La Libertad": [
+            3193,
+            8004
+          ],
+          "Lambayeque": [
+            2609,
+            6644
+          ],
+          "Lima": [
+            2763,
+            4432
+          ],
+          "Piura": [
+            2530,
+            3480
+          ],
+          "San Martín": [
+            1582,
+            3169
+          ],
+          "Lima Provincias": [
+            2883,
+            5622
+          ],
+          "Nacional": [
+            2381,
+            3735
+          ],
+          "Áncash": [
+            2416,
+            5792
+          ],
+          "Arequipa": [
+            2208,
+            5239
+          ],
+          "Callao": [
+            3292,
+            7590
+          ]
+        }
+      },
+      "ingenieria de sistemas y computo": {
+        "n": "INGENIERÍA DE SISTEMAS Y CÓMPUTO",
+        "r": {
+          "Ica": [
+            2873,
+            5934
+          ],
+          "Junín": [
+            2748,
+            4764
+          ],
+          "La Libertad": [
+            2748,
+            5026
+          ],
+          "Lambayeque": [
+            2254,
+            4152
+          ],
+          "Lima": [
+            4710,
+            8934
+          ],
+          "Loreto": [
+            2738,
+            4170
+          ],
+          "Moquegua": [
+            3268,
+            5526
+          ],
+          "Piura": [
+            3085,
+            4706
+          ],
+          "Puno": [
+            2107,
+            4062
+          ],
+          "San Martín": [
+            2364,
+            4165
+          ],
+          "Tacna": [
+            2185,
+            4169
+          ],
+          "Ucayali": [
+            2680,
+            4408
+          ],
+          "Lima Provincias": [
+            2281,
+            4721
+          ],
+          "Nacional": [
+            4320,
+            8032
+          ],
+          "Áncash": [
+            2195,
+            5249
+          ],
+          "Apurímac": [
+            2464,
+            4149
+          ],
+          "Arequipa": [
+            2975,
+            5477
+          ],
+          "Cajamarca": [
+            2814,
+            5648
+          ],
+          "Callao": [
+            4141,
+            9058
+          ],
+          "Cusco": [
+            2735,
+            5023
+          ]
+        }
+      },
+      "ingenieria en industrias alimentarias": {
+        "n": "INGENIERÍA EN INDUSTRIAS ALIMENTARIAS",
+        "r": {
+          "Ica": [
+            2860,
+            6019
+          ],
+          "Junín": [
+            1689,
+            3572
+          ],
+          "Lambayeque": [
+            1829,
+            4129
+          ],
+          "Lima": [
+            2828,
+            7526
+          ],
+          "Piura": [
+            2237,
+            6075
+          ],
+          "Tacna": [
+            1465,
+            3514
+          ],
+          "Lima Provincias": [
+            2470,
+            5160
+          ],
+          "Nacional": [
+            2536,
+            6267
+          ],
+          "Áncash": [
+            2000,
+            6473
+          ],
+          "Arequipa": [
+            2188,
+            4874
+          ],
+          "Cajamarca": [
+            2017,
+            5236
+          ],
+          "Callao": [
+            2804,
+            6922
+          ]
+        }
+      },
+      "ingenieria pesquera": {
+        "n": "INGENIERÍA PESQUERA",
+        "r": {
+          "Ica": [
+            2819,
+            5502
+          ],
+          "Lima": [
+            2389,
+            6401
+          ],
+          "Piura": [
+            2365,
+            4922
+          ],
+          "Lima Provincias": [
+            3156,
+            6308
+          ],
+          "Nacional": [
+            2485,
+            5920
+          ],
+          "Callao": [
+            2131,
+            5243
+          ]
+        }
+      },
+      "biologia": {
+        "n": "BIOLOGÍA",
+        "r": {
+          "Ica": [
+            2664,
+            4672
+          ],
+          "La Libertad": [
+            1897,
+            3940
+          ],
+          "Lambayeque": [
+            1821,
+            3596
+          ],
+          "Lima": [
+            2743,
+            6560
+          ],
+          "Piura": [
+            2040,
+            4217
+          ],
+          "Nacional": [
+            2779,
+            5613
+          ],
+          "Áncash": [
+            2942,
+            5306
+          ],
+          "Arequipa": [
+            1981,
+            4299
+          ],
+          "Callao": [
+            2270,
+            4993
+          ]
+        }
+      },
+      "ingenieria sanitaria": {
+        "n": "INGENIERÍA SANITARIA",
+        "r": {
+          "Ica": [
+            2644,
+            4562
+          ],
+          "Lima": [
+            3203,
+            7812
+          ],
+          "Puno": [
+            1997,
+            4153
+          ],
+          "Nacional": [
+            3380,
+            8827
+          ]
+        }
+      },
+      "negocios internacionales": {
+        "n": "NEGOCIOS INTERNACIONALES",
+        "r": {
+          "Ica": [
+            2449,
+            4534
+          ],
+          "Junín": [
+            2531,
+            4444
+          ],
+          "La Libertad": [
+            2337,
+            4474
+          ],
+          "Lambayeque": [
+            2222,
+            3450
+          ],
+          "Lima": [
+            2309,
+            5815
+          ],
+          "Loreto": [
+            2504,
+            4425
+          ],
+          "Madre de Dios": [
+            2125,
+            3787
+          ],
+          "Piura": [
+            2349,
+            2740
+          ],
+          "Puno": [
+            1755,
+            2499
+          ],
+          "San Martín": [
+            2149,
+            4372
+          ],
+          "Tacna": [
+            1649,
+            3782
+          ],
+          "Tumbes": [
+            2151,
+            2943
+          ],
+          "Lima Provincias": [
+            2492,
+            4199
+          ],
+          "Nacional": [
+            2324,
+            5174
+          ],
+          "Áncash": [
+            2369,
+            4448
+          ],
+          "Apurímac": [
+            2673,
+            5129
+          ],
+          "Arequipa": [
+            1802,
+            3770
+          ],
+          "Ayacucho": [
+            1826,
+            3214
+          ],
+          "Cajamarca": [
+            2195,
+            3969
+          ],
+          "Callao": [
+            2411,
+            5059
+          ],
+          "Cusco": [
+            2436,
+            3593
+          ]
+        }
+      },
+      "administracion de servicios turisticos, hoteleria y gastronomia": {
+        "n": "ADMINISTRACIÓN DE SERVICIOS TURÍSTICOS, HOTELERÍA Y GASTRONOMÍA",
+        "r": {
+          "Ica": [
+            2197,
+            3208
+          ],
+          "La Libertad": [
+            1843,
+            2653
+          ],
+          "Lambayeque": [
+            1906,
+            2925
+          ],
+          "Lima": [
+            2606,
+            4940
+          ],
+          "Piura": [
+            1877,
+            2997
+          ],
+          "Puno": [
+            1645,
+            2368
+          ],
+          "San Martín": [
+            1802,
+            2640
+          ],
+          "Lima Provincias": [
+            1929,
+            2972
+          ],
+          "Nacional": [
+            2416,
+            4393
+          ],
+          "Arequipa": [
+            1758,
+            3030
+          ],
+          "Cajamarca": [
+            1701,
+            3263
+          ],
+          "Callao": [
+            2897,
+            5078
+          ],
+          "Cusco": [
+            2365,
+            3756
+          ]
+        }
+      },
+      "veterinaria": {
+        "n": "VETERINARIA",
+        "r": {
+          "Ica": [
+            2118,
+            3989
+          ],
+          "Lima": [
+            2547,
+            6317
+          ],
+          "Nacional": [
+            2613,
+            5676
+          ],
+          "Arequipa": [
+            1959,
+            4860
+          ]
+        }
+      },
+      "enfermeria": {
+        "n": "ENFERMERÍA",
+        "r": {
+          "Ica": [
+            2071,
+            3519
+          ],
+          "Junín": [
+            2190,
+            3386
+          ],
+          "La Libertad": [
+            1418,
+            1874
+          ],
+          "Lambayeque": [
+            1313,
+            1534
+          ],
+          "Lima": [
+            1667,
+            2248
+          ],
+          "Loreto": [
+            1453,
+            1590
+          ],
+          "Moquegua": [
+            2915,
+            6137
+          ],
+          "Piura": [
+            1539,
+            1988
+          ],
+          "Puno": [
+            1987,
+            2581
+          ],
+          "San Martín": [
+            1463,
+            2057
+          ],
+          "Tacna": [
+            1200,
+            1697
+          ],
+          "Ucayali": [
+            1764,
+            2052
+          ],
+          "Lima Provincias": [
+            2177,
+            2839
+          ],
+          "Nacional": [
+            2256,
+            3147
+          ],
+          "Áncash": [
+            1388,
+            2976
+          ],
+          "Arequipa": [
+            1724,
+            2422
+          ],
+          "Cajamarca": [
+            1875,
+            2726
+          ],
+          "Callao": [
+            2570,
+            4577
+          ],
+          "Cusco": [
+            1580,
+            2035
+          ]
+        }
+      },
+      "educacion primaria": {
+        "n": "EDUCACIÓN PRIMARIA",
+        "r": {
+          "Ica": [
+            1463,
+            2477
+          ],
+          "Junín": [
+            1853,
+            2685
+          ],
+          "La Libertad": [
+            1746,
+            2652
+          ],
+          "Lima": [
+            2265,
+            3582
+          ],
+          "Piura": [
+            2210,
+            2907
+          ],
+          "Puno": [
+            1682,
+            2731
+          ],
+          "Lima Provincias": [
+            1593,
+            2267
+          ],
+          "Nacional": [
+            2384,
+            3648
+          ],
+          "Áncash": [
+            1946,
+            2788
+          ],
+          "Arequipa": [
+            1414,
+            2616
+          ]
+        }
+      },
+      "farmacia y bioquimica": {
+        "n": "FARMACIA Y BIOQUÍMICA",
+        "r": {
+          "Ica": [
+            1384,
+            3666
+          ],
+          "Junín": [
+            1575,
+            2860
+          ],
+          "La Libertad": [
+            1538,
+            2206
+          ],
+          "Lima": [
+            1826,
+            2410
+          ],
+          "San Martín": [
+            1615,
+            1874
+          ],
+          "Nacional": [
+            1707,
+            2510
+          ],
+          "Arequipa": [
+            1330,
+            1945
+          ]
+        }
+      },
+      "ingenieria electrica": {
+        "n": "INGENIERÍA ELÉCTRICA",
+        "r": {
+          "Junín": [
+            2699,
+            5470
+          ],
+          "Lima": [
+            4223,
+            9376
+          ],
+          "Nacional": [
+            4012,
+            9169
+          ],
+          "Arequipa": [
+            2884,
+            7009
+          ],
+          "Callao": [
+            3535,
+            7028
+          ]
+        }
+      },
+      "ciencias forestales": {
+        "n": "CIENCIAS FORESTALES",
+        "r": {
+          "Junín": [
+            1925,
+            4621
+          ],
+          "Lima": [
+            2993,
+            9583
+          ],
+          "Madre de Dios": [
+            3153,
+            5976
+          ],
+          "Nacional": [
+            2658,
+            6756
+          ],
+          "Cajamarca": [
+            2022,
+            4425
+          ]
+        }
+      },
+      "secretariado": {
+        "n": "SECRETARIADO",
+        "r": {
+          "Junín": [
+            1527,
+            2844
+          ],
+          "Lima": [
+            2048,
+            4018
+          ],
+          "Nacional": [
+            3490,
+            5759
+          ]
+        }
+      },
+      "antropologia y arqueologia": {
+        "n": "ANTROPOLOGÍA Y ARQUEOLOGÍA",
+        "r": {
+          "La Libertad": [
+            3530,
+            4026
+          ],
+          "Lima": [
+            3419,
+            6845
+          ],
+          "Nacional": [
+            3201,
+            5605
+          ]
+        }
+      },
+      "estadistica": {
+        "n": "ESTADÍSTICA",
+        "r": {
+          "La Libertad": [
+            2993,
+            4899
+          ],
+          "Lambayeque": [
+            2148,
+            3455
+          ],
+          "Lima": [
+            4527,
+            8879
+          ],
+          "Piura": [
+            2469,
+            4303
+          ],
+          "Nacional": [
+            3770,
+            7126
+          ]
+        }
+      },
+      "zootecnia": {
+        "n": "ZOOTECNIA",
+        "r": {
+          "La Libertad": [
+            2895,
+            6632
+          ],
+          "Lima": [
+            2566,
+            9703
+          ],
+          "Lima Provincias": [
+            2117,
+            8155
+          ],
+          "Nacional": [
+            2707,
+            7033
+          ]
+        }
+      },
+      "tecnico industrial": {
+        "n": "TÉCNICO INDUSTRIAL",
+        "r": {
+          "La Libertad": [
+            2783,
+            5523
+          ],
+          "Lima": [
+            3383,
+            8566
+          ],
+          "Nacional": [
+            3551,
+            7338
+          ]
+        }
+      },
+      "ingenieria en agroindustria": {
+        "n": "INGENIERÍA EN AGROINDUSTRIA",
+        "r": {
+          "La Libertad": [
+            2434,
+            5149
+          ],
+          "Lambayeque": [
+            2429,
+            6671
+          ],
+          "Lima": [
+            2890,
+            5884
+          ],
+          "Piura": [
+            2286,
+            4635
+          ],
+          "San Martín": [
+            2419,
+            4131
+          ],
+          "Lima Provincias": [
+            3075,
+            6934
+          ],
+          "Nacional": [
+            2667,
+            5001
+          ],
+          "Áncash": [
+            2899,
+            4411
+          ],
+          "Callao": [
+            2682,
+            4524
+          ]
+        }
+      },
+      "marketing": {
+        "n": "MARKETING",
+        "r": {
+          "La Libertad": [
+            1832,
+            4184
+          ],
+          "Lambayeque": [
+            1795,
+            4342
+          ],
+          "Lima": [
+            2525,
+            6221
+          ],
+          "Moquegua": [
+            2027,
+            2818
+          ],
+          "Piura": [
+            2184,
+            3646
+          ],
+          "Puno": [
+            1946,
+            3130
+          ],
+          "San Martín": [
+            2044,
+            3306
+          ],
+          "Nacional": [
+            2481,
+            6128
+          ],
+          "Arequipa": [
+            2024,
+            3911
+          ],
+          "Cajamarca": [
+            1983,
+            3173
+          ],
+          "Callao": [
+            3594,
+            9987
+          ],
+          "Cusco": [
+            2355,
+            4328
+          ]
+        }
+      },
+      "tecnologia medica": {
+        "n": "TECNOLOGÍA MÉDICA",
+        "r": {
+          "Lambayeque": [
+            2135,
+            3162
+          ],
+          "Lima": [
+            1880,
+            2609
+          ],
+          "Piura": [
+            1503,
+            2174
+          ],
+          "Nacional": [
+            2024,
+            2950
+          ],
+          "Arequipa": [
+            2230,
+            2792
+          ]
+        }
+      },
+      "otras carreras de educacion": {
+        "n": "OTRAS CARRERAS DE EDUCACIÓN",
+        "r": {
+          "Lambayeque": [
+            1878,
+            2896
+          ],
+          "Lima": [
+            2335,
+            4156
+          ],
+          "Madre de Dios": [
+            1338,
+            2903
+          ],
+          "Piura": [
+            2281,
+            3927
+          ],
+          "Puno": [
+            1778,
+            2575
+          ],
+          "Tacna": [
+            1699,
+            2618
+          ],
+          "Nacional": [
+            2179,
+            3893
+          ],
+          "Arequipa": [
+            1772,
+            3222
+          ],
+          "Cajamarca": [
+            1670,
+            3189
+          ],
+          "Cusco": [
+            2056,
+            3592
+          ]
+        }
+      },
+      "diseno": {
+        "n": "DISEÑO",
+        "r": {
+          "Lambayeque": [
+            1719,
+            2156
+          ],
+          "Lima": [
+            2808,
+            5737
+          ],
+          "Nacional": [
+            2755,
+            5582
+          ]
+        }
+      },
+      "ingenieria de telecomunicaciones": {
+        "n": "INGENIERÍA DE TELECOMUNICACIONES",
+        "r": {
+          "Lima": [
+            4326,
+            8157
+          ],
+          "Nacional": [
+            4227,
+            7972
+          ],
+          "Arequipa": [
+            3308,
+            5070
+          ]
+        }
+      },
+      "otras carreras de administracion": {
+        "n": "OTRAS CARRERAS DE ADMINISTRACIÓN",
+        "r": {
+          "Lima": [
+            4068,
+            8758
+          ],
+          "Nacional": [
+            3777,
+            7568
+          ],
+          "Arequipa": [
+            2036,
+            3894
+          ],
+          "Callao": [
+            4471,
+            7470
+          ]
+        }
+      },
+      "ingenieria naval y aeronautica": {
+        "n": "INGENIERÍA NAVAL Y AERONÁUTICA",
+        "r": {
+          "Lima": [
+            3862,
+            8265
+          ],
+          "Nacional": [
+            3820,
+            7387
+          ],
+          "Callao": [
+            4203,
+            6616
+          ]
+        }
+      },
+      "agronegocios": {
+        "n": "AGRONEGOCIOS",
+        "r": {
+          "Lima": [
+            3727,
+            10781
+          ],
+          "Nacional": [
+            3521,
+            7746
+          ]
+        }
+      },
+      "administracion publica": {
+        "n": "ADMINISTRACIÓN PÚBLICA",
+        "r": {
+          "Lima": [
+            3685,
+            5399
+          ],
+          "Nacional": [
+            3449,
+            6190
+          ]
+        }
+      },
+      "investigacion operativa": {
+        "n": "INVESTIGACIÓN OPERATIVA",
+        "r": {
+          "Lima": [
+            3429,
+            6341
+          ],
+          "Nacional": [
+            3506,
+            7177
+          ]
+        }
+      },
+      "ciencias politicas": {
+        "n": "CIENCIAS POLÍTICAS",
+        "r": {
+          "Lima": [
+            3373,
+            7320
+          ],
+          "Nacional": [
+            3466,
+            8440
+          ]
+        }
+      },
+      "geografia": {
+        "n": "GEOGRAFÍA",
+        "r": {
+          "Lima": [
+            3287,
+            7356
+          ],
+          "Nacional": [
+            3372,
+            7303
+          ]
+        }
+      },
+      "servicios sociales y asistenciales": {
+        "n": "SERVICIOS SOCIALES Y ASISTENCIALES",
+        "r": {
+          "Lima": [
+            3223,
+            7464
+          ],
+          "Nacional": [
+            3089,
+            6273
+          ]
+        }
+      },
+      "idiomas": {
+        "n": "IDIOMAS",
+        "r": {
+          "Lima": [
+            3152,
+            6026
+          ],
+          "Piura": [
+            2843,
+            3699
+          ],
+          "Nacional": [
+            3133,
+            5705
+          ]
+        }
+      },
+      "tecnico civil": {
+        "n": "TÉCNICO CIVIL",
+        "r": {
+          "Lima": [
+            3135,
+            4924
+          ],
+          "Nacional": [
+            2575,
+            5298
+          ]
+        }
+      },
+      "matematica": {
+        "n": "MATEMÁTICA",
+        "r": {
+          "Lima": [
+            3065,
+            5460
+          ],
+          "Nacional": [
+            2589,
+            4933
+          ]
+        }
+      },
+      "periodismo y locucion": {
+        "n": "PERIODISMO Y LOCUCIÓN",
+        "r": {
+          "Lima": [
+            3010,
+            6072
+          ],
+          "Nacional": [
+            2995,
+            6113
+          ],
+          "Arequipa": [
+            2241,
+            3528
+          ]
+        }
+      },
+      "educacion especial": {
+        "n": "EDUCACIÓN ESPECIAL",
+        "r": {
+          "Lima": [
+            2949,
+            4347
+          ],
+          "Nacional": [
+            2839,
+            4215
+          ]
+        }
+      },
+      "otras ingenierias": {
+        "n": "OTRAS INGENIERÍAS",
+        "r": {
+          "Lima": [
+            2932,
+            6263
+          ],
+          "Nacional": [
+            2988,
+            6624
+          ]
+        }
+      },
+      "educacion tecnologica": {
+        "n": "EDUCACIÓN TECNOLÓGICA",
+        "r": {
+          "Lima": [
+            2888,
+            4720
+          ],
+          "Nacional": [
+            2830,
+            4974
+          ]
+        }
+      },
+      "textil y confecciones": {
+        "n": "TEXTIL Y CONFECCIONES",
+        "r": {
+          "Lima": [
+            2847,
+            4247
+          ],
+          "Nacional": [
+            2668,
+            4272
+          ]
+        }
+      },
+      "bibliotecologia y archivo": {
+        "n": "BIBLIOTECOLOGÍA Y ARCHIVO",
+        "r": {
+          "Lima": [
+            2828,
+            5024
+          ],
+          "Nacional": [
+            2854,
+            5320
+          ]
+        }
+      },
+      "ingenieria textil y confecciones": {
+        "n": "INGENIERÍA TEXTIL Y CONFECCIONES",
+        "r": {
+          "Lima": [
+            2799,
+            5949
+          ],
+          "Nacional": [
+            2773,
+            5943
+          ]
+        }
+      },
+      "fisica": {
+        "n": "FÍSICA",
+        "r": {
+          "Lima": [
+            2746,
+            5548
+          ],
+          "Nacional": [
+            2654,
+            5584
+          ]
+        }
+      },
+      "teologia y filosofia": {
+        "n": "TEOLOGÍA Y FILOSOFÍA",
+        "r": {
+          "Lima": [
+            2712,
+            5021
+          ],
+          "Nacional": [
+            2613,
+            4874
+          ]
+        }
+      },
+      "artes": {
+        "n": "ARTES",
+        "r": {
+          "Lima": [
+            2660,
+            6332
+          ],
+          "Nacional": [
+            2456,
+            5567
+          ]
+        }
+      },
+      "nutricion": {
+        "n": "NUTRICIÓN",
+        "r": {
+          "Lima": [
+            2657,
+            5039
+          ],
+          "Nacional": [
+            3998,
+            5145
+          ],
+          "Arequipa": [
+            2034,
+            3342
+          ]
+        }
+      },
+      "historia": {
+        "n": "HISTORIA",
+        "r": {
+          "Lima": [
+            2345,
+            5631
+          ],
+          "Nacional": [
+            2382,
+            5142
+          ],
+          "Cusco": [
+            1784,
+            2494
+          ]
+        }
+      },
+      "educacion fisica": {
+        "n": "EDUCACIÓN FÍSICA",
+        "r": {
+          "Lima": [
+            2282,
+            3581
+          ],
+          "Nacional": [
+            2246,
+            3445
+          ]
+        }
+      },
+      "odontologia": {
+        "n": "ODONTOLOGÍA",
+        "r": {
+          "Lima": [
+            2216,
+            4635
+          ],
+          "Nacional": [
+            4732,
+            4970
+          ]
+        }
+      },
+      "tecnico de telecomunicaciones": {
+        "n": "TÉCNICO DE TELECOMUNICACIONES",
+        "r": {
+          "Lima": [
+            2213,
+            4412
+          ],
+          "Nacional": [
+            2940,
+            3622
+          ]
+        }
+      },
+      "tecnico en industrias alimentarias": {
+        "n": "TÉCNICO EN INDUSTRIAS ALIMENTARIAS",
+        "r": {
+          "Lima": [
+            2184,
+            3323
+          ],
+          "Nacional": [
+            1979,
+            3261
+          ]
+        }
+      },
+      "linguistica y literatura": {
+        "n": "LINGÜÍSTICA Y LITERATURA",
+        "r": {
+          "Lima": [
+            2157,
+            5132
+          ],
+          "Nacional": [
+            2369,
+            5176
+          ]
+        }
+      },
+      "obstetricia": {
+        "n": "OBSTETRICIA",
+        "r": {
+          "Lima": [
+            2004,
+            4343
+          ],
+          "San Martín": [
+            1721,
+            4173
+          ],
+          "Nacional": [
+            4480,
+            5305
+          ]
+        }
+      },
+      "turismo": {
+        "n": "TURISMO",
+        "r": {
+          "Lima": [
+            1944,
+            4268
+          ],
+          "Nacional": [
+            1849,
+            3459
+          ],
+          "Cusco": [
+            1892,
+            3063
+          ]
+        }
+      },
+      "hidrografia": {
+        "n": "HIDROGRAFÍA",
+        "r": {
+          "Nacional": [
+            3641,
+            4272
+          ]
+        }
+      },
+      "suboficiales de las fuerzas armadas": {
+        "n": "SUBOFICIALES DE LAS FUERZAS ARMADAS",
+        "r": {
+          "Nacional": [
+            3561,
+            4198
+          ]
+        }
+      },
+      "oficiales de la policia nacional": {
+        "n": "OFICIALES DE LA POLICÍA NACIONAL",
+        "r": {
+          "Nacional": [
+            3422,
+            4976
+          ]
+        }
+      },
+      "suboficiales de la policia nacional": {
+        "n": "SUBOFICIALES DE LA POLICÍA NACIONAL",
+        "r": {
+          "Nacional": [
+            3321,
+            3738
+          ]
+        }
+      },
+      "oficiales de las fuerzas armadas": {
+        "n": "OFICIALES DE LAS FUERZAS ARMADAS",
+        "r": {
+          "Nacional": [
+            2969,
+            7725
+          ]
+        }
+      },
+      "meteorologia": {
+        "n": "METEOROLOGÍA",
+        "r": {
+          "Nacional": [
+            2274,
+            2367
+          ]
+        }
+      },
+      "musica": {
+        "n": "MÚSICA",
+        "r": {
+          "Nacional": [
+            2241,
+            3855
+          ]
+        }
+      },
+      "educacion artistica": {
+        "n": "EDUCACIÓN ARTÍSTICA",
+        "r": {
+          "Nacional": [
+            2035,
+            3482
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,182 @@
+RESUMEN BASE DE CONOCIMIENTO - ELIGIENDO MI CAMINO
+Guia de orientacion vocacional para estudiantes de 5to de secundaria del Peru.
+Fuentes oficiales: MTPE (portal Mi Carrera), INEI, SUNEDU, MINEDU y PRONABEC.
+
+== CARRERAS MEJOR PAGADAS Y SUELDOS POR CARRERA (MTPE, Mi Carrera) ==
+Datos del MTPE (portal Mi Carrera), Planilla Electronica del sector formal, periodo set 2024 - ago 2025,
+en Lima Metropolitana. Cifra = ingreso promedio mensual de jovenes profesionales de 18 a 29 anios (sueldo
+de inicio aproximado); los adultos de 30 a mas suelen ganar bastante mas. Es referencial: depende de la
+empresa, el desempenio y la experiencia. Los sueldos VARIAN por region (ver seccion de sueldos por region).
+
+== SUELDOS INGENIERÍA, TECNOLOGÍA, SISTEMAS Y CIENCIAS (universitarias) (jovenes 18-29, Lima) ==
+  - Ingeniería de Sistemas y Cómputo: S/ 4 710
+  - Ciencias de la Computación: S/ 4 651
+  - Estadística: S/ 4 527
+  - Ingeniería de Telecomunicaciones: S/ 4 326
+  - Ingeniería Minera, Metalurgia y Petróleo: S/ 4 270
+  - Ingeniería Industrial: S/ 4 248
+  - Ingeniería Eléctrica: S/ 4 223
+  - Ingeniería Mecánica: S/ 4 177
+  - Ingeniería Civil: S/ 4 152
+  - Geología: S/ 4 043
+  - Ingeniería Electrónica: S/ 3 710
+  - Ingeniería Sanitaria: S/ 3 203
+  - Arquitectura y Urbanismo: S/ 3 213
+  - Química: S/ 3 166
+  - Matemática: S/ 3 065
+  - Física: S/ 2 746
+  - Biología: S/ 2 743
+  - Ecología y Medio Ambiente: S/ 3 123
+  - Ingeniería en Agroindustria: S/ 2 890
+
+== SUELDOS SALUD (universitarias): Medicina, Enfermería, Psicología, Odontología, Nutrición, Farmacia, Obstetricia, Tecnología Médica, Veterinaria (jovenes 18-29, Lima) ==
+  - Medicina: S/ 3 897
+  - Farmacia y Bioquímica: S/ 3 021
+  - Tecnología Médica: S/ 2 687
+  - Veterinaria: S/ 2 547
+  - Psicología: S/ 2 534
+  - Enfermería: S/ 2 473
+  - Odontología: S/ 2 216
+  - Obstetricia: S/ 2 004
+
+== SUELDOS NEGOCIOS, ECONOMÍA, DERECHO Y GESTIÓN (universitarias): Economía, Administración, Marketing, Contabilidad, Negocios Internacionales, Derecho, Ciencias Políticas, Turismo (jovenes 18-29, Lima) ==
+  - Economía: S/ 4 526
+  - Otras Carreras de Administración: S/ 4 068
+  - Administración de Empresas: S/ 3 794
+  - Agronegocios: S/ 3 727
+  - Marketing: S/ 3 704
+  - Administración Pública: S/ 3 685
+  - Derecho: S/ 3 622
+  - Ciencias Políticas: S/ 3 373
+  - Negocios Internacionales: S/ 3 245
+  - Contabilidad y Finanzas: S/ 2 827
+  - Administración de Servicios Turísticos, Hotelería y Gastronomía: S/ 2 721
+
+== SUELDOS EDUCACIÓN, COMUNICACIÓN, ARTE, CIENCIAS SOCIALES Y HUMANIDADES (universitarias): Educación, Comunicación, Periodismo, Trabajo Social, Diseño, Artes, Idiomas (jovenes 18-29, Lima) ==
+  - Ciencias de la Comunicación: S/ 3 211
+  - Periodismo y Locución: S/ 3 010
+  - Trabajo Social: S/ 2 832
+  - Diseño: S/ 2 949
+  - Artes: S/ 2 660
+  - Idiomas: S/ 3 152
+  - Educación Secundaria: S/ 2 308
+  - Educación Primaria: S/ 2 265
+  - Educación Inicial: S/ 2 230
+  - Educación Física: S/ 2 282
+  - Educación Especial: S/ 2 949
+
+== SUELDOS CARRERAS TECNICAS de instituto (jovenes 18-29, Lima): Tecnico en Mineria, Computacion, Industrial, Civil, Electricista, Electronica, Mecanica, Enfermeria, Administracion, Turismo ==
+  - Técnico en Minera, Metalurgia y Petróleo (tecnica): S/ 6 235
+  - Ciencias de la Computación (tecnica): S/ 3 968
+  - Técnico Industrial (tecnica): S/ 3 383
+  - Técnico Civil (tecnica): S/ 3 135
+  - Técnico Electricista (tecnica): S/ 3 128
+  - Técnico Electrónica (tecnica): S/ 2 671
+  - Técnico Mecánica (tecnica): S/ 2 783
+  - Técnico de Telecomunicaciones (tecnica): S/ 2 213
+  - Administración de Empresas (tecnica): S/ 2 370
+  - Negocios Internacionales (tecnica): S/ 2 309
+  - Administración de Servicios Turísticos, Hotelería y Gastronomía (tecnica): S/ 2 606
+  - Enfermería (tecnica): S/ 1 667
+  - Química (tecnica): S/ 2 355
+  - Técnico en Industrias Alimentarias (tecnica): S/ 2 184
+  - Secretariado (tecnica): S/ 2 048
+  - Turismo (tecnica): S/ 1 944
+Dato clave: una carrera TECNICA puede pagar tanto o mas que una universitaria. El Tecnico en Mineria,
+Metalurgia y Petroleo es la tecnica mejor pagada (S/ 6 235 en Lima), por encima de muchas universitarias.
+
+== SUELDOS POR REGION (varian mucho; jovenes 18-29): Lima, Moquegua, Arequipa, Ica, Cusco ==
+El sueldo depende de la region: suele ser mas alto en Lima y regiones mineras (Moquegua, Arequipa, Ica, Tacna).
+Ejemplos reales (MTPE), ingreso promedio mensual joven por region:
+  - Ingeniería Minera, Metalurgia y Petróleo: Lima S/ 4 270 · Moquegua S/ 6 082 · Arequipa S/ 4 032 · Ica S/ 4 404 · Cusco S/ 4 859
+  - Técnico en Minera, Metalurgia y Petróleo (tecnica): Lima S/ 6 235 · Ica S/ 8 604
+  - Ingeniería Civil: Lima S/ 4 152 · Moquegua S/ 4 617 · Arequipa S/ 3 613 · Ica S/ 3 670 · Cusco S/ 3 102
+  - Ingeniería de Sistemas y Cómputo: Lima S/ 4 710 · Moquegua S/ 3 268 · Arequipa S/ 2 975 · Ica S/ 2 873 · Cusco S/ 2 735
+  - Economía: Lima S/ 4 526 · Arequipa S/ 2 222 · Ica S/ 2 458 · Cusco S/ 2 355
+  - Medicina: Lima S/ 3 897 · Arequipa S/ 3 553 · Ica S/ 2 958 · Cusco S/ 3 432
+  - Derecho: Lima S/ 3 622 · Arequipa S/ 2 330 · Ica S/ 2 309 · Cusco S/ 2 382
+Para el sueldo de una carrera en TU region, revisa Mi Carrera del MTPE en «Datos verificados».
+
+== MERCADO LABORAL (INEI, Lima Metropolitana, ene-dic 2025) ==
+Ojo: estos datos son de Lima Metropolitana (Lima y Callao), no de todo el pais.
+  - Hay cerca de 5,6 millones de personas ocupadas; la tasa de desempleo es 5,9% (baja).
+  - El gran reto NO es el desempleo sino la CALIDAD del empleo: solo el 61% tiene empleo
+    adecuado y un 33% esta subempleado (gana poco o trabaja menos horas de las que quisiera).
+  - Donde hay mas trabajo: Servicios concentra el 55,8% de los empleos, Comercio 22,1%,
+    Manufactura 13,4% y Construccion 7,4%. En 2025 todos esos sectores crecieron.
+  - El ingreso promedio mensual del trabajo es de S/ 2 220 (subio 9,1% frente a 2024).
+  - Estudiar paga: la fuerza laboral con educacion superior universitaria crecio 7% y la
+    tecnica (superior no universitaria) tambien aumento; en cambio bajo el empleo de quienes
+    solo tienen secundaria y son muy jovenes. Tener un titulo abre mas y mejores puertas.
+  - Brecha de genero: las mujeres ganan en promedio 74,8% de lo que ganan los hombres.
+
+== BECAS Y FINANCIAMIENTO ==
+Fuente: documentos oficiales de PRONABEC, portal Mi Carrera (MTPE) y paginas de admision de las universidades. Las convocatorias son ANUALES y con fechas fijas: revisa los enlaces con anticipacion. Las BECAS no se devuelven; los CREDITOS son prestamos que si se devuelven.
+
+PRONABEC (Estado) - BECAS:
+  * Beca 18: beca INTEGRAL para jovenes con alto rendimiento (suele pedir tercio superior) y en pobreza o vulnerabilidad, que terminan o ya terminaron la secundaria. Cubre estudios completos (matricula y pensiones) MAS manutencion (alimentacion, alojamiento, movilidad, utiles y laptop). Tiene 10 MODALIDADES segun tu situacion: Ordinaria (pobreza/pobreza extrema segun el SISFOH), CNA (comunidades nativas amazonicas), PA (pueblo afroperuano), EIB (dominas una lengua originaria y estudiaras Educacion), VRAEM y zonas de conflicto, entre otras. La convocatoria 2026 inicia inscripcion en setiembre de 2025 e incluye un Examen Nacional de Preseleccion (matematica y lectura). Postula en www.pronabec.gob.pe (seccion Concursos de becas y creditos).
+  * Beca Permanencia: para estudiantes en pobreza/pobreza extrema que YA estan estudiando (entre el 2do y el antepenultimo ciclo). Cubre alimentacion, movilidad y utiles. https://www.pronabec.gob.pe/beca-permanencia/
+  * Beca Inclusion (Carreras Profesionales): para personas con discapacidad que concluyeron la secundaria e ingresaron a una universidad o instituto elegible. Cubre matricula, pensiones, utiles, alimentacion, alojamiento, movilidad y laptop. https://www.pronabec.gob.pe/beca-inclusion-carreras-profesionales/
+  * Beca Tec: para jovenes de 17 a 39 anios que quieren una carrera TECNICA de alta demanda. Cubre matricula, pensiones y certificacion. NO exige pobreza ni tercio superior (solo haber terminado la secundaria). https://www.pronabec.gob.pe/beca-tec/
+
+PRONABEC - CREDITOS EDUCATIVOS (prestamos que se devuelven):
+  * Credito Talento: prestamo educativo de tasa baja (aprox. 4%) y hasta 10 anios para pagar.
+  * Credito Pro: para estudiantes de los ultimos ciclos de universidad o instituto que necesitan apoyo para terminar.
+
+BECAS EN UNIVERSIDADES PRIVADAS (cada universidad tiene sus propias becas por merito academico o necesidad economica; los nombres, la cobertura y los requisitos cambian cada anio, asi que revisa la pagina de "Becas" de cada una para los detalles):
+  * PUCP - https://admision.pucp.edu.pe/becas-y-pensiones/becas
+  * U. del Pacifico - https://admision.up.edu.pe/becas/
+  * UTEC - https://utec.edu.pe/experiencia-universitaria
+  * UPC - https://www.upc.edu.pe/admision/becas-y-financiamiento/
+  * U. de Lima - https://www.ulima.edu.pe/beca-ilse-wisotzki
+  * U. de Piura - https://www.udep.edu.pe/becas/
+
+BECAS DE COOPERACION INTERNACIONAL (PRONABEC las difunde, para estudiar fuera o en Peru por convenio): Espana (Fundacion Carolina), China, Corea, Turquia, Alemania (DAAD), entre otros. https://www.pronabec.gob.pe/becas-de-cooperacion-internacional/
+
+Consejo: revisa www.pronabec.gob.pe con tiempo, ten listo tu DNI y tus notas, y verifica tu clasificacion socioeconomica (pobreza) en el SISFOH antes de postular a las becas que lo piden.
+
+== ASESORIA VOCACIONAL GRATUITA DEL MTPE ==
+  Que es: El MTPE ofrece Orientacion Vocacional e Informacion Ocupacional (referida como SOVIO / orientacion vocacional): una asesoria personalizada y gratuita, virtual o presencial, donde un orientador ayuda al joven a informarse, revisar sus intereses y ordenar sus opciones de estudio y carrera. No decide por el estudiante ni garantiza empleo; sirve para aclarar dudas sobre requisitos, rutas (tecnica, universitaria, CETPRO, certificaciones), tiempos y donde buscar informacion confiable.
+  Como acceder: Se saca cita en linea en el sistema de citas del MTPE (Extranet): 1) Ingresar al sistema de citas. 2) Elegir la sede/zona de atencion segun tu region. 3) Seleccionar el servicio de orientacion vocacional / informacion ocupacional. 4) Elegir fecha y hora disponibles. 5) Registrar tus datos (DNI, nombres, telefono, correo). 6) Confirmar la reserva. Si es virtual, conectate con puntualidad y revisa tu correo y la bandeja de spam; si es presencial, lleva tu DNI y 3-5 preguntas anotadas.
+  Enlace oficial (sistema de citas): https://extranet.trabajo.gob.pe/extranet/web/citas
+
+== COMO VERIFICAR SI UNA UNIVERSIDAD O INSTITUTO ESTA LICENCIADO ==
+  - Universidades: SUNEDU publica la lista oficial de universidades con licencia vigente.
+    La base incluye 100 universidades licenciadas registradas, en todas las regiones del pais
+    (publicas y privadas). Verifica siempre en: www.sunedu.gob.pe/lista-de-universidades-licenciadas/
+  - Institutos de educacion superior: el MINEDU licencia los institutos. La base incluye
+    198 institutos tecnico-superior licenciados en 23 regiones.
+  - REGLA DE ORO: antes de matricularte y pagar, confirma que la institucion tenga licencia
+    vigente. Estudiar en una institucion no licenciada pone en riesgo la validez de tu titulo.
+
+== EXPLORAR CARRERAS ==
+  - Carreras del futuro (alta proyeccion, segun MTPE): Blockchain, Ciberseguridad y seguridad de la informacion, Energias renovables, Especialista en Inteligencia Artificial, Cloud Computing, Nanotecnologia, Medicina genomica, Mecatronica, Ingenieria Molecular, Cuidados Medicos, Ciencias Ambientales, Biotecnologia, Biomedicina.
+    Estan ligadas a tecnologia, salud avanzada, datos, energia limpia y medio ambiente.
+  - Hay podcasts de orientacion con testimonios reales de estudiantes para estas carreras: Derecho, Administracion de Empresas, Administracion y Finanzas, Administracion y Negocios Internacionales, Marketing, Economia, Ingenieria Civil, Arquitectura, Ciencias de la Comunicacion, Ciencia Politica, Psicologia, Enfermeria, Odontologia, Fotografia, Pasteleria.
+
+== MENSAJE CENTRAL ==
+Con informacion, acompanamiento y esfuerzo, el origen socioeconomico no define tu futuro.
+No existe 'la mejor carrera' para todos: la mejor decision combina tus intereses y aptitudes,
+las oportunidades reales de empleo e ingresos, el costo y la duracion, y que la institucion
+este licenciada. Las carreras tecnicas son una excelente opcion (mas cortas, baratas y muy
+bien pagadas en varios campos). Usa las becas y la asesoria gratuita del MTPE como apoyo.
+
+== CETPROs (CARRERAS TECNICAS CORTAS Y PRACTICAS) ==
+Los CETPRO (Centros de Educacion Tecnico-Productiva) ofrecen carreras tecnicas CORTAS y practicas, orientadas al trabajo, organizadas en modulos formativos. Fuente: MINEDU.
+  - Los modulos son autonomos: puedes matricularte en uno o varios de forma independiente y vas certificando por modulo.
+  - Al completar la ruta formativa obtienes un titulo/certificado; la educacion publica es gratuita (solo pagas matricula).
+  - Son ideales si quieres empezar a trabajar pronto o especializarte rapido, sin hacer una carrera de 5 anios.
+  - Para ver los CETPRO licenciados cerca tuyo, revisa el padron del MINEDU en «Datos verificados».
+
+== COMO POSTULAR A UNA UNIVERSIDAD PUBLICA ==
+El proceso de admision VARIA por universidad (examen, fechas, puntajes y costos distintos). Si eres menor de edad, ve acompaniado de un padre o representante legal.
+  Requisitos: partida de nacimiento, DNI, 2 fotos tamanio carnet, certificado de estudios de los 5 anios de secundaria, y la solicitud de inscripcion.
+  5 pasos: (1) elige una universidad publica (por ubicacion, carreras, fechas); (2) preparate para el examen (revisa examenes anteriores, vacantes y puntaje necesario); (3) inscribete presentando los requisitos en la Oficina Central de Admision; (4) paga el derecho de postulacion en el Banco de la Nacion y guarda el comprobante; (5) asiste al examen de admision. La lista oficial de universidades publicas y los enlaces estan en «Datos verificados».
+
+== COMO INSCRIBIRSE EN UN INSTITUTO PUBLICO (IES / EEST) ==
+Para una carrera tecnica o profesional tecnica puedes inscribirte en un Instituto de Educacion Superior (IES) o Escuela de Educacion Superior Tecnica (EEST). La educacion publica es gratuita (solo pagas el prospecto de admision y la matricula); al terminar obtienes un titulo a nombre de la Nacion.
+  Requisitos: partida de nacimiento, DNI, certificado de estudios de los 5 anios de secundaria, 2 fotos y carpeta de postulante.
+  5 pasos: (1) elige un IES/EEST (por ubicacion, carreras, fechas); (2) preparate con el balotario de la prueba de admision; (3) inscribete (presencial o en linea) en la sede; (4) paga el derecho de postulacion; (5) rinde el examen de admision. Consulta la lista de IES/EEST licenciados en «Datos verificados».
+
+== CARRERAS MAS DEMANDADAS (MTPE) ==
+Las carreras con MAS puestos de trabajo solicitados a nivel nacional (MTPE, portal Mi Carrera) son, en el top: 1) Sistemas y Computo, 2) Gestion y Administracion, seguidas por otras de tecnologia, administracion e ingenieria. Ojo: "mas demandada" significa mas ofertas de empleo, no necesariamente el mejor sueldo; combinalo con tus intereses y con los ingresos (ver «Carreras mejor pagadas»). Para la lista completa revisa «Datos verificados».

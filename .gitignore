@@ -1,0 +1,12 @@
+node_modules/
+public/models/
+**/*.onnx
+**/*.onnx_data
+offline-app-dist.zip
+dist/
+.DS_Store
+*.log
+_pages/
+_pkg/
+*.exe
+_reference_demo.html

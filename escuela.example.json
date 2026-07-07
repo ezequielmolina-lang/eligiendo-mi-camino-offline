@@ -1,0 +1,11 @@
+{
+  "_readme": "CONFIG DE ESCUELA — HQ llena esto por colegio/sección y lo guarda como 'escuela.json' dentro de dist/ (o en la raíz del proyecto y se copia al compilar). El equipo lo lee al abrir y queda 'conectado' a su escuela/profesor. El estudiante solo escribe su nombre y número de lista.",
+  "_readme_region": "region: pon EXACTAMENTE el nombre del departamento donde está el colegio (ej.: 'Lima', 'Cusco', 'Arequipa', 'La Libertad', 'Áncash'). Con esto, los listados de universidades e institutos aparecen ya filtrados a esa región. Si no lo pones, el equipo verá todas las regiones y podrá elegir.",
+  "campus_id": "00028-LIMA-001",
+  "campus_name": "I.E. José Carlos Mariátegui",
+  "section": "5° A",
+  "teacher": "García",
+  "region": "Lima",
+  "institution_id": 28,
+  "sync_endpoint": "https://TU-SERVIDOR-HQ/voc/sync"
+}

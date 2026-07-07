@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Eligiendo Mi Camino</title>
+  <meta name="description" content="Orientación vocacional con Gallito — funciona sin internet." />
+  <meta name="theme-color" content="#F57B21" />
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="./icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="stylesheet" href="./styles.css?b=__BUILD_ID__" />
+  <style>
+    /* Pre-bundle splash so the screen isn't blank while bundle.js parses */
+    #boot { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #FDFCFB; color: #515A65; font-family: 'Poppins', system-ui, sans-serif; gap: 14px; }
+    #boot .dot { width: 44px; height: 44px; border-radius: 9999px; border: 4px solid #FCDDB8; border-top-color: #F57B21; animation: bspin .8s linear infinite; }
+    @keyframes bspin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <div id="boot"><div class="dot"></div><div>Cargando Eligiendo Mi Camino…</div></div>
+  <noscript>Esta aplicación necesita JavaScript activado.</noscript>
+  <script src="./bundle.js?b=__BUILD_ID__"></script>
+  <script>
+    // Remove splash once React has mounted into #root
+    (function () {
+      var tries = 0;
+      var t = setInterval(function () {
+        var root = document.getElementById('root');
+        if (root && root.childElementCount > 0) { var b = document.getElementById('boot'); if (b) b.remove(); clearInterval(t); }
+        if (++tries > 200) clearInterval(t);
+      }, 50);
+    })();
+    // Register service worker for offline use; auto-reload once when a new build takes control.
+    // (?nosw=1 skips registration — useful during development.)
+    if ('serviceWorker' in navigator && !/[?&]nosw=1/.test(location.search)) {
+      var reloaded = false;
+      navigator.serviceWorker.addEventListener('controllerchange', function () {
+        if (!reloaded) { reloaded = true; location.reload(); }
+      });
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('./service-worker.js')
+          .then(function (reg) { try { reg.update().catch(function () {}); } catch (e) {} })
+          .catch(function () { /* offline or no SW support — app still runs */ });
+      });
+    }
+  </script>
+</body>
+</html>

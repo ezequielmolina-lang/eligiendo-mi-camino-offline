@@ -117,29 +117,41 @@ export async function getEngine(modelId = DEFAULT_MODEL, onProgress) {
   if (_loading && _engineModel === modelId) return _loading;
   _engineModel = modelId;
 
+  // AUTO-FALLBACK ladder: try the requested model, then the lighter/known-good ones after it in MODELS
+  // (v3 -> v2 -> v1). A model that DOWNLOADS but won't INSTANTIATE in onnxruntime-web (e.g. an "Aborted()"
+  // WASM error on a graph ORT can't optimize) drops to the next, so the student always gets a working coach
+  // instead of a dead-end error screen.
+  const _idx = Math.max(0, MODELS.findIndex((m) => m.id === modelId));
+  const _candidates = MODELS.slice(_idx).map((m) => m.id);
+
   _loading = (async () => {
-    try {
-      const gen = await pipeline('text-generation', modelId, {
-        device: 'webgpu',
-        dtype: EMC_DTYPE,
-        progress_callback: _mkProgressCb(onProgress),
-      });
-      // Warm up (compiles WebGPU shaders now → fast first reply). A GPU failure here surfaces as a load error.
+    let lastErr;
+    for (let k = 0; k < _candidates.length; k++) {
+      const id = _candidates[k];
       try {
+        if (k > 0) { try { onProgress && onProgress({ progress: 0, text: 'Probando un modelo alternativo…' }); } catch (_) {} }
+        const gen = await pipeline('text-generation', id, {
+          device: 'webgpu',
+          dtype: EMC_DTYPE,
+          // v3's q4f16 export needs ORT graph optimization OFF to instantiate (a SimplifiedLayerNorm fusion in
+          // onnxruntime aborts otherwise — verified on the desktop ORT). 'disabled' keeps it loadable in-browser.
+          session_options: { graphOptimizationLevel: 'disabled' },
+          progress_callback: _mkProgressCb(onProgress),
+        });
+        // Warm up: compile shaders + surface any instantiation error NOW (so we can fall back).
         onProgress && onProgress({ progress: 1, text: 'Afinando el modelo…' });
         await gen([{ role: 'user', content: 'Hola' }], { max_new_tokens: 1, do_sample: false });
-      } catch (e2) {
-        if (_isGpuErr(e2)) { try { await (gen.dispose && gen.dispose()); } catch (_) {} throw e2; }
-        // non-GPU warmup error (e.g. chat-template quirk): keep the engine, let real chat surface it.
+        _engine = gen; _engineModel = id; _loading = null;
+        try { logEvent('model_ready', { model: id, requested: modelId, fell_back: id !== modelId, attempt: k, engine: 'transformers' }); } catch (_) {}
+        return gen;
+      } catch (err) {
+        lastErr = err;
+        try { logEvent('model_load_failed', { model: id, requested: modelId, attempt: k, err: String((err && err.message) || err).slice(0, 140) }); } catch (_) {}
+        // try the next (lighter) candidate
       }
-      _engine = gen; _engineModel = modelId; _loading = null;
-      // RCT: record which model/engine the student actually got (parity with coach.js 'model_ready').
-      try { logEvent('model_ready', { model: modelId, requested: modelId, fell_back: false, attempt: 0, engine: 'transformers' }); } catch (_) {}
-      return gen;
-    } catch (err) {
-      _loading = null; _engineModel = null;
-      throw err;
     }
+    _loading = null; _engineModel = null;
+    throw lastErr;
   })();
   return _loading;
 }

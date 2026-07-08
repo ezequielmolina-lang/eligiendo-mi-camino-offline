@@ -2,7 +2,7 @@
    Precaches the app shell (HTML/JS/CSS/fonts/icons) so the app works with zero network.
    Cross-origin requests (the LLM model CDN on first download, and the HQ sync API) are
    left to the network — WebLLM manages its own model cache; we never intercept those. */
-const BUILD = '1783441404341';
+const BUILD = '1783513412824';
 const CACHE = 'emc-shell-' + BUILD;
 const ASSETS = [
   './',

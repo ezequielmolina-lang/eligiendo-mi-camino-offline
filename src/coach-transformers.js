@@ -34,11 +34,16 @@ try {
 // Single curated model: the fine-tuned Gallito. (coach.js exposes 3 MLC sizes; here there is one ONNX build.)
 // Same shape {id,label,sizeGB,note} so offline-card.jsx's model <select> renders without changes.
 export const V2_MODEL_ID = 'ezequielmolina/gallito-1.5b-v2-onnx';   // hosted on HF (4-step v2)
+export const V3_MODEL_ID = 'ezequielmolina/gallito-v3-1.5b-onnx';   // hosted on HF (Trained on Opus, the BEST model)
+// NOTE: this list must stay in sync with coach.js's TF_MODELS. If a selected id is NOT here, getEngine()
+// coerces it to DEFAULT_MODEL --- which previously silently swapped the v3 selection for v2 and left
+// engineReady(v3) permanently false (the chat could hang on the readiness check). v3 must be present + default.
 export const MODELS = [
+  { id: V3_MODEL_ID, label: 'Gallito · Trained on Opus', sizeGB: 1.35, note: 'el mejor modelo (destilado de Opus) — ONNX' },
   { id: V2_MODEL_ID, label: 'Gallito v2', sizeGB: 1.35, note: 'v2 afinado 4 pasos (ONNX)' },
   { id: EMC_MODEL_ID, label: 'Gallito v1', sizeGB: 1.0, note: 'v1 Paso-1 (ONNX)' },
 ];
-export const DEFAULT_MODEL = MODELS[0].id;   // v2 default for the live comparison test
+export const DEFAULT_MODEL = MODELS[0].id;   // v3 (best model) is the default
 
 // Model selection persists in localStorage. We reuse the SAME key coach.js uses ('emc_model') so switching
 // engines doesn't lose/clobber the choice. If a stale WebLLM/MLC id is stored, we coerce to our ONNX id

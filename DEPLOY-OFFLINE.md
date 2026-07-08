@@ -1,12 +1,31 @@
 # Deploy the offline app to `eligiendomicamino.org/offline`
 
-The whole offline app (with the best model, **v3 · Trained on Opus**, as the default) is built and ready in
-`dist/`. It is a static PWA — no server code — so hosting it is just serving that folder. It uses **relative
-paths** throughout (`./bundle.js`, `scope: "./"`, `start_url: "./index.html"`), so it works under a sub-path like
-`/offline` with no changes.
+The whole offline app (with the best model, **v3 · Trained on Opus**, as the default, and the **expanded crisis
+guard** — recertified 24/24 on the internal crisis probe set) is built and ready in `dist/` and mirrored in
+`docs/` (what GitHub Pages serves). It is a static PWA — no server code — so hosting it is just serving that
+folder. It uses **relative paths** throughout (`./bundle.js`, `./service-worker.js`, `scope: "./"`,
+`start_url: "./index.html"`), so it works under a sub-path like `/offline` with **no changes**.
 
 At runtime the app streams the model (~1.2 GB, cached after first load) from the public HuggingFace repo
 `ezequielmolina/gallito-v3-1.5b-onnx` over CORS, so it works from any origin.
+
+## It is already live (staging) — uDocz just needs to mount it at `/offline`
+
+The current build is already published at
+**https://ezequielmolina-lang.github.io/eligiendo-mi-camino-offline/** (v3 default + fixed guard, verified).
+Putting it on `eligiendomicamino.org/offline` requires uDocz (the domain/host owner) to do one of the options
+below — it cannot be pushed from outside their infrastructure.
+
+### Fastest — reverse-proxy the live URL (no file copy)
+```nginx
+location /offline/ {
+    proxy_pass https://ezequielmolina-lang.github.io/eligiendo-mi-camino-offline/;
+    proxy_set_header Host ezequielmolina-lang.github.io;
+    proxy_ssl_server_name on;
+}
+```
+Relative asset paths and the `./` service-worker scope resolve correctly under `/offline/`. (Downside: depends on
+GitHub Pages uptime; prefer Option A for a permanent home.)
 
 ## Rebuild (only if you change source)
 

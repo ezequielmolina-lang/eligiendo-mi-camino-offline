@@ -47,6 +47,18 @@ try {
   }
 } catch (e) {}
 
+// CRITICAL for GitHub Pages / any host WITHOUT COOP+COEP cross-origin-isolation headers:
+// the page is NOT crossOriginIsolated, so SharedArrayBuffer is unavailable. onnxruntime-web ships a
+// *threaded* WASM build (ort-wasm-simd-threaded.jsep.wasm); if it tries to spawn pthreads it aborts with an
+// opaque numeric WASM exception (e.g. 1364322384) at SESSION CREATION — for EVERY model, before any generation.
+// That was the real "No pude iniciar el asistente" cause. Force single-thread + no proxy worker so the WebGPU
+// EP runs on the main thread with no SharedArrayBuffer requirement. (GPU still does the compute; this only
+// controls the WASM glue/threading.)
+try {
+  env.backends.onnx.wasm.numThreads = 1;
+  env.backends.onnx.wasm.proxy = false;
+} catch (e) {}
+
 // ---- Public API mirror (must match coach.js) -----------------------------------------------------------
 // Single curated model: the fine-tuned Gallito. (coach.js exposes 3 MLC sizes; here there is one ONNX build.)
 // Same shape {id,label,sizeGB,note} so offline-card.jsx's model <select> renders without changes.
@@ -174,7 +186,7 @@ export async function getEngine(modelId = DEFAULT_MODEL, onProgress) {
           return gen;
         } catch (err) {
           lastErr = err;
-          console.error(`[getEngine] load FAILED model=${id} opt=${opt}:`, err);
+          console.error(`[getEngine] load FAILED model=${id} opt=${opt}:`, err, '| name=', err && err.name, '| msg=', err && err.message, '| stack=', err && err.stack);
           try { logEvent('model_load_failed', { model: id, requested: modelId, attempt: k, opt, err: String((err && err.message) || err).slice(0, 140) }); } catch (_) {}
           // 'default' failed → retry SAME model with 'disabled'; if that fails too → next (lighter) candidate.
         }

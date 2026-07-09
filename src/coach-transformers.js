@@ -174,6 +174,7 @@ export async function getEngine(modelId = DEFAULT_MODEL, onProgress) {
           return gen;
         } catch (err) {
           lastErr = err;
+          console.error(`[getEngine] load FAILED model=${id} opt=${opt}:`, err);
           try { logEvent('model_load_failed', { model: id, requested: modelId, attempt: k, opt, err: String((err && err.message) || err).slice(0, 140) }); } catch (_) {}
           // 'default' failed → retry SAME model with 'disabled'; if that fails too → next (lighter) candidate.
         }

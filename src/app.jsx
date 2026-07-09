@@ -7,6 +7,7 @@ import KB_SUMMARY from './data/kb-summary.txt';
 import * as telemetry from './telemetry.js';
 import { OfflineCard } from './offline-card.jsx';
 import { ResearchStep } from './data-reference.jsx';
+import { Step6Journey } from './step6.jsx';
 import { ConfidenceCheck, ReflectionCheck, getCheckin, setCheckin, getPace } from './checkin.jsx';
 import { careerSalary, SAL_REGIONS, defaultSalRegion, saveSalRegion, fmtSoles, salaryContextFor } from './salaries.js';
 import { StudentOnboarding } from './onboarding.jsx';
@@ -66,6 +67,16 @@ const I={
   home:p=><svg {...p} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>,
   x:p=><svg {...p} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>,
 };
+
+/* Save-to-favorites toggle (Paso 5) — feeds the Paso 6 shortlist and profile.favorites. */
+function FavButton({name}){
+  const[fav,setFav]=useState(()=>{try{return (getProfile().favorites||[]).includes(name);}catch(e){return false;}});
+  const toggle=()=>{try{const cur=getProfile().favorites||[];const next=fav?cur.filter(x=>x!==name):[...cur,name];updateProfile({favorites:next});setFav(!fav);}catch(e){}};
+  return(<button onClick={toggle} aria-pressed={fav} title={fav?'Guardada en tus favoritas':'Guardar en mis favoritas'}
+    className={`shrink-0 flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold border-2 transition ${fav?'bg-brand-50 border-brand-300 text-brand-600':'bg-white border-cream-200 text-navy-400 hover:border-brand-200'}`}>
+    <span className="text-base leading-none">{fav?'⭐':'☆'}</span><span className="hidden sm:inline">{fav?'En favoritas':'Me interesa'}</span>
+  </button>);
+}
 
 /* -- SECTOR DATA (career_explorer_v5 - 12 sectors, 142 ocupaciones) -- */
 const sectors=[
@@ -1485,7 +1496,8 @@ function App(){
         <button onClick={()=>setSelCareer(null)} className="text-sm text-brand-500 hover:text-brand-600 font-bold mb-4 flex items-center gap-1">{'\u2190'} Volver al sector</button>
         <div className="flex items-center gap-4 mb-6">
           <div className={`w-12 h-12 ${lc[c.level]} rounded-xl flex items-center justify-center`}><I.grad className="w-6 h-6 text-white"/></div>
-          <div><h2 className="text-xl sm:text-2xl font-black text-navy-700">{c.name}</h2><p className="text-sm text-navy-400">{ll[c.level]}</p></div>
+          <div className="flex-1 min-w-0"><h2 className="text-xl sm:text-2xl font-black text-navy-700">{c.name}</h2><p className="text-sm text-navy-400">{ll[c.level]}</p></div>
+          <FavButton name={c.name}/>
         </div>
         {c.desc&&(<div className="bg-amber-50 border-2 border-amber-200 rounded-2xl p-4 sm:p-5 mb-4 sm:mb-5">
           <h3 className="font-bold text-amber-700 text-sm mb-2">¿Qué hace esta persona?</h3>
@@ -1820,8 +1832,9 @@ function App(){
       {view==='myths'&&<Myths/>}
       {view==='routes'&&<Routes/>}
       {view==='explore'&&<Explore/>}
-      {view==='notebook'&&<ResearchStep
-        header={{title:'Paso 6: Investigación con IA',subtitle:'Datos verificados + Gallito · Sesión 6'}}
+      {view==='notebook'&&<Step6Journey
+        sectors={sectors}
+        header={{title:'Paso 6: Investigación con IA',subtitle:'Elige, investiga y prioriza · Sesión 6'}}
         mascotSrc={GALLITO_MINI}
         onComplete={()=>{mark(5);nav('home');}}
         chat={<GallitoChat

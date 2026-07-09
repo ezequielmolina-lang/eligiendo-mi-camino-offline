@@ -25,9 +25,26 @@ const EMC_DTYPE = 'q4f16';
 // allowLocalModels=false: do NOT look for ./models/<id> first (that path is the WebLLM bundled-model convention,
 // not an ONNX layout) — go straight to the Hub. useBrowserCache=true: cache fetched files so reloads are offline.
 try {
-  // Both v1 and v2 are hosted on the HF Hub (ONNX q4f16); go straight to the Hub and cache.
-  env.allowLocalModels = false;
-  env.useBrowserCache = true;
+  // OPTIONAL same-origin local model source. When the model files are self-hosted alongside the app
+  // (build.mjs copies a top-level models/ dir into dist/models/), loading from same-origin is faster and
+  // — crucially — RESUMABLE: unlike the HF Xet CDN (which doesn't expose Content-Length cross-origin, so a
+  // dropped connection restarts the whole 1.3 GB download), a same-origin static host sends Content-Length +
+  // Accept-Ranges. Enable with ?localmodel=1 (or persist emc_localmodel=1). Default stays: stream from the Hub.
+  const _wantLocal = (() => {
+    try {
+      if (typeof location !== 'undefined' && /[?&]localmodel=1/.test(location.search)) return true;
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('emc_localmodel') === '1') return true;
+    } catch (e) {}
+    return false;
+  })();
+  if (_wantLocal) {
+    env.allowLocalModels = true;
+    env.localModelPath = '/models/';   // resolves /models/<repo-id>/onnx/model_q4f16.onnx
+    env.useBrowserCache = false;        // files are already local; no need to duplicate in Cache Storage
+  } else {
+    env.allowLocalModels = false;
+    env.useBrowserCache = true;
+  }
 } catch (e) {}
 
 // ---- Public API mirror (must match coach.js) -----------------------------------------------------------
@@ -124,30 +141,42 @@ export async function getEngine(modelId = DEFAULT_MODEL, onProgress) {
   const _idx = Math.max(0, MODELS.findIndex((m) => m.id === modelId));
   const _candidates = MODELS.slice(_idx).map((m) => m.id);
 
+  // For each candidate model we try TWO optimization modes, in order:
+  //   'default' → let ORT-web optimize (fuses nodes → few shaders → fast compile + fast inference). This is
+  //               how the correctly-exported v1/v2/v3 (transformers.js converter) load; it's the normal path.
+  //   'disabled' → last-resort for a model whose graph makes ORT abort during optimization (an old custom
+  //               export had a SimplifiedLayerNorm fusion that aborts in ORT). Loadable but MUCH slower
+  //               (a shader per unoptimized node → multi-minute compile), so only if 'default' actually fails.
+  async function _tryLoad(id, opt) {
+    const gen = await pipeline('text-generation', id, {
+      device: 'webgpu',
+      dtype: EMC_DTYPE,
+      ...(opt === 'disabled' ? { session_options: { graphOptimizationLevel: 'disabled' } } : {}),
+      progress_callback: _mkProgressCb(onProgress),
+    });
+    // Warm up: compile shaders + surface any instantiation error NOW (so we can fall back).
+    onProgress && onProgress({ progress: 1, text: 'Afinando el modelo…' });
+    await gen([{ role: 'user', content: 'Hola' }], { max_new_tokens: 1, do_sample: false });
+    return gen;
+  }
+
   _loading = (async () => {
     let lastErr;
     for (let k = 0; k < _candidates.length; k++) {
       const id = _candidates[k];
-      try {
-        if (k > 0) { try { onProgress && onProgress({ progress: 0, text: 'Probando un modelo alternativo…' }); } catch (_) {} }
-        const gen = await pipeline('text-generation', id, {
-          device: 'webgpu',
-          dtype: EMC_DTYPE,
-          // v3's q4f16 export needs ORT graph optimization OFF to instantiate (a SimplifiedLayerNorm fusion in
-          // onnxruntime aborts otherwise — verified on the desktop ORT). 'disabled' keeps it loadable in-browser.
-          session_options: { graphOptimizationLevel: 'disabled' },
-          progress_callback: _mkProgressCb(onProgress),
-        });
-        // Warm up: compile shaders + surface any instantiation error NOW (so we can fall back).
-        onProgress && onProgress({ progress: 1, text: 'Afinando el modelo…' });
-        await gen([{ role: 'user', content: 'Hola' }], { max_new_tokens: 1, do_sample: false });
-        _engine = gen; _engineModel = id; _loading = null;
-        try { logEvent('model_ready', { model: id, requested: modelId, fell_back: id !== modelId, attempt: k, engine: 'transformers' }); } catch (_) {}
-        return gen;
-      } catch (err) {
-        lastErr = err;
-        try { logEvent('model_load_failed', { model: id, requested: modelId, attempt: k, err: String((err && err.message) || err).slice(0, 140) }); } catch (_) {}
-        // try the next (lighter) candidate
+      for (const opt of ['default', 'disabled']) {
+        try {
+          if (k > 0 && opt === 'default') { try { onProgress && onProgress({ progress: 0, text: 'Probando un modelo alternativo…' }); } catch (_) {} }
+          if (opt === 'disabled') { try { onProgress && onProgress({ progress: 0, text: 'Reintentando (modo compatible)…' }); } catch (_) {} }
+          const gen = await _tryLoad(id, opt);
+          _engine = gen; _engineModel = id; _loading = null;
+          try { logEvent('model_ready', { model: id, requested: modelId, fell_back: id !== modelId, attempt: k, opt, engine: 'transformers' }); } catch (_) {}
+          return gen;
+        } catch (err) {
+          lastErr = err;
+          try { logEvent('model_load_failed', { model: id, requested: modelId, attempt: k, opt, err: String((err && err.message) || err).slice(0, 140) }); } catch (_) {}
+          // 'default' failed → retry SAME model with 'disabled'; if that fails too → next (lighter) candidate.
+        }
       }
     }
     _loading = null; _engineModel = null;

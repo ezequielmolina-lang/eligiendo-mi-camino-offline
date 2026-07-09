@@ -44,6 +44,19 @@ try {
   } else {
     env.allowLocalModels = false;
     env.useBrowserCache = true;
+    // WHERE TO STREAM THE MODEL FROM. Default = Hugging Face Hub. To use a host that supports Content-Length +
+    // Range (Cloudflare R2, S3+CloudFront, uDocz's own server) — which fixes the flaky/no-resume 1.3 GB HF
+    // download — set MODEL_CDN to that base URL. transformers.js fetches {remoteHost}/{repo-id}/resolve/main/
+    // onnx/model_q4f16.onnx (+ .onnx_data + configs), so the CDN must mirror that exact path layout.
+    const MODEL_CDN = '';  // e.g. 'https://pub-xxxxxxxx.r2.dev'  — leave '' to use Hugging Face
+    let _cdn = MODEL_CDN;
+    try {
+      const q = (typeof location !== 'undefined') && new URLSearchParams(location.search).get('modelhost');
+      _cdn = q || (typeof localStorage !== 'undefined' && localStorage.getItem('emc_modelhost')) || MODEL_CDN || '';
+    } catch (e) {}
+    if (_cdn) {
+      try { env.remoteHost = String(_cdn).replace(/\/$/, ''); env.remotePathTemplate = '{model}/resolve/{revision}/'; } catch (e) {}
+    }
   }
 } catch (e) {}
 
@@ -56,7 +69,12 @@ try {
 // controls the WASM glue/threading.)
 try {
   env.backends.onnx.wasm.numThreads = 1;
-  env.backends.onnx.wasm.proxy = false;
+  // proxy=true runs ORT (WASM + WebGPU EP) in a Web Worker, so the heavy first-load shader compile of a big
+  // model (the 1.5B takes minutes) happens OFF the main thread — the UI stays responsive with a progress bar
+  // instead of freezing the tab. Key to making the 1.5B usable in-browser. Disable with ?noproxy=1 if a device's
+  // worker can't get WebGPU (then it compiles on the main thread as before).
+  const _noProxy = (() => { try { return typeof location !== 'undefined' && /[?&]noproxy=1/.test(location.search); } catch (e) { return false; } })();
+  env.backends.onnx.wasm.proxy = !_noProxy;
 } catch (e) {}
 
 // ---- Public API mirror (must match coach.js) -----------------------------------------------------------
@@ -64,7 +82,8 @@ try {
 // Same shape {id,label,sizeGB,note} so offline-card.jsx's model <select> renders without changes.
 export const V2_MODEL_ID = 'ezequielmolina/gallito-1.5b-v2-onnx';   // hosted on HF (4-step v2)
 export const V3_MODEL_ID = 'ezequielmolina/gallito-v3-1.5b-onnx';   // hosted on HF (Trained on Opus, 1.5B)
-export const V3_05B_MODEL_ID = 'ezequielmolina/gallito-v3-0.5b-onnx'; // Trained on Opus, 0.5B — the in-browser default
+export const V3_05B_MODEL_ID = 'ezequielmolina/gallito-v3-0.5b-onnx'; // Trained on Opus, 0.5B
+export const V3_LLAMA_MODEL_ID = 'ezequielmolina/gallito-v3-llama-1b-onnx'; // Trained on Opus, Llama-3.2-1B
 // The 0.5B v3 is the DEFAULT for the browser: onnxruntime-web can't stage the 1.5B (q4f16 ~1.27 GB) — WebGPU
 // aborts with an opaque numeric exception and single-thread wasm (no cross-origin isolation on GitHub Pages) is
 // too slow. The 0.5B (~0.56 GB) runs on the WebGPU EP and downloads fast. The 1.5B stays available for powerful
@@ -73,13 +92,21 @@ export const V3_05B_MODEL_ID = 'ezequielmolina/gallito-v3-0.5b-onnx'; // Trained
 // stage the whole 1.27 GB in the WASM heap (the single-file blob was what aborted at ~model size). It's the
 // DEFAULT (best quality). The 0.5B stays as the immediate auto-fallback: if a device still can't run the 1.5B,
 // getEngine drops to it (fast, WebGPU-safe) so the student always gets a working coach.
+// Browser DEFAULT = 0.5B: it loads in seconds and generates smoothly on WebGPU. The 1.5B (best quality) is
+// kept selectable, BUT in a typical browser its WebGPU shader-compile takes minutes and freezes the tab each
+// load (compilation isn't cached across sessions) — so it's a "powerful PC / server-side" option, not the
+// default. External-data packaging fixed the 1.5B's load *crash*, but not its compile *time*.
+// DEFAULT = 1.5B (best quality). It runs in the browser with external-data weights + proxy (off-main-thread
+// compile); the first load is heavy (minutes to compile) but the UI stays responsive. If a device can't run it,
+// getEngine auto-falls-back down this list: Llama-1B (lighter, strong quality) → 0.5B (fastest) → v2 → v1.
 export const MODELS = [
-  { id: V3_MODEL_ID, label: 'Gallito · Trained on Opus', sizeGB: 1.35, note: 'el mejor modelo (destilado de Opus, 1.5B) — ONNX external-data' },
-  { id: V3_05B_MODEL_ID, label: 'Gallito · Trained on Opus (0.5B)', sizeGB: 0.56, note: 'más liviano y rápido — respaldo para equipos modestos' },
+  { id: V3_MODEL_ID, label: 'Gallito · Trained on Opus (1.5B)', sizeGB: 1.35, note: 'máxima calidad — destilado de Opus (recomendado)' },
+  { id: V3_LLAMA_MODEL_ID, label: 'Gallito · Trained on Opus (Llama 1B)', sizeGB: 0.9, note: 'buena calidad, más liviano que el 1.5B' },
+  { id: V3_05B_MODEL_ID, label: 'Gallito · Trained on Opus (0.5B)', sizeGB: 0.56, note: 'el más rápido — para equipos modestos' },
   { id: V2_MODEL_ID, label: 'Gallito v2', sizeGB: 1.35, note: 'v2 afinado 4 pasos (ONNX)' },
   { id: EMC_MODEL_ID, label: 'Gallito v1', sizeGB: 1.0, note: 'v1 Paso-1 (ONNX)' },
 ];
-export const DEFAULT_MODEL = MODELS[0].id;   // 1.5B v3 (external-data) — best quality; auto-falls back to 0.5B
+export const DEFAULT_MODEL = MODELS[0].id;   // 1.5B v3 — best quality; auto-falls back to Llama-1B / 0.5B
 
 // Model selection persists in localStorage. We reuse the SAME key coach.js uses ('emc_model') so switching
 // engines doesn't lose/clobber the choice. If a stale WebLLM/MLC id is stored, we coerce to our ONNX id
@@ -166,7 +193,16 @@ export async function getEngine(modelId = DEFAULT_MODEL, onProgress) {
   //              q4f16 model generates on CPU (verified via a Node onnxruntime harness). So if WebGPU aborts,
   //              the student still gets a working coach on CPU instead of a dead-end error screen.
   // Only offer 'webgpu' when the browser actually has it; otherwise go straight to CPU.
-  const _devices = webgpuAvailable() ? ['webgpu', 'wasm'] : ['wasm'];
+  // CPU MODE (?cpu=1 or emc_cpu=1): skip WebGPU entirely and run on WASM-CPU. WebGPU is fast to RUN but has a
+  // huge one-time SHADER-COMPILE cost on a big model (the 1.5B: minutes). CPU has NO compile step — it starts
+  // generating immediately (slower per token, but no multi-minute "Preparando" freeze). On a host with COOP/COEP
+  // (Cloudflare/uDocz) CPU also goes multi-threaded → noticeably faster. For a heavy model on a modest machine,
+  // CPU-immediate is often a better experience than GPU-after-a-long-compile.
+  const _forceCpu = (() => { try {
+    if (typeof location !== 'undefined' && /[?&]cpu=1/.test(location.search)) return true;
+    if (typeof localStorage !== 'undefined' && localStorage.getItem('emc_cpu') === '1') return true;
+  } catch (e) {} return false; })();
+  const _devices = _forceCpu ? ['wasm'] : (webgpuAvailable() ? ['webgpu', 'wasm'] : ['wasm']);
 
   async function _tryLoad(id, device) {
     const gen = await pipeline('text-generation', id, {

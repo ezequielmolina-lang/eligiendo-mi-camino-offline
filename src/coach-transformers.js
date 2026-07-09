@@ -69,13 +69,17 @@ export const V3_05B_MODEL_ID = 'ezequielmolina/gallito-v3-0.5b-onnx'; // Trained
 // aborts with an opaque numeric exception and single-thread wasm (no cross-origin isolation on GitHub Pages) is
 // too slow. The 0.5B (~0.56 GB) runs on the WebGPU EP and downloads fast. The 1.5B stays available for powerful
 // PCs / a cross-origin-isolated host. NOTE: keep in sync with coach.js's TF_MODELS.
+// 1.5B is now packaged with EXTERNAL DATA (small graph + streamed .onnx_data) so ort-web no longer has to
+// stage the whole 1.27 GB in the WASM heap (the single-file blob was what aborted at ~model size). It's the
+// DEFAULT (best quality). The 0.5B stays as the immediate auto-fallback: if a device still can't run the 1.5B,
+// getEngine drops to it (fast, WebGPU-safe) so the student always gets a working coach.
 export const MODELS = [
-  { id: V3_05B_MODEL_ID, label: 'Gallito · Trained on Opus', sizeGB: 0.56, note: 'destilado de Opus (0.5B) — rápido en el navegador' },
-  { id: V3_MODEL_ID, label: 'Gallito · Trained on Opus (1.5B)', sizeGB: 1.35, note: '1.5B — mayor calidad, necesita PC potente o servidor aislado' },
+  { id: V3_MODEL_ID, label: 'Gallito · Trained on Opus', sizeGB: 1.35, note: 'el mejor modelo (destilado de Opus, 1.5B) — ONNX external-data' },
+  { id: V3_05B_MODEL_ID, label: 'Gallito · Trained on Opus (0.5B)', sizeGB: 0.56, note: 'más liviano y rápido — respaldo para equipos modestos' },
   { id: V2_MODEL_ID, label: 'Gallito v2', sizeGB: 1.35, note: 'v2 afinado 4 pasos (ONNX)' },
   { id: EMC_MODEL_ID, label: 'Gallito v1', sizeGB: 1.0, note: 'v1 Paso-1 (ONNX)' },
 ];
-export const DEFAULT_MODEL = MODELS[0].id;   // 0.5B v3 — the model that actually runs in the browser
+export const DEFAULT_MODEL = MODELS[0].id;   // 1.5B v3 (external-data) — best quality; auto-falls back to 0.5B
 
 // Model selection persists in localStorage. We reuse the SAME key coach.js uses ('emc_model') so switching
 // engines doesn't lose/clobber the choice. If a stale WebLLM/MLC id is stored, we coerce to our ONNX id

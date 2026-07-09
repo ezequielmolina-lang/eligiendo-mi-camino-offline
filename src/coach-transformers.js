@@ -63,16 +63,19 @@ try {
 // Single curated model: the fine-tuned Gallito. (coach.js exposes 3 MLC sizes; here there is one ONNX build.)
 // Same shape {id,label,sizeGB,note} so offline-card.jsx's model <select> renders without changes.
 export const V2_MODEL_ID = 'ezequielmolina/gallito-1.5b-v2-onnx';   // hosted on HF (4-step v2)
-export const V3_MODEL_ID = 'ezequielmolina/gallito-v3-1.5b-onnx';   // hosted on HF (Trained on Opus, the BEST model)
-// NOTE: this list must stay in sync with coach.js's TF_MODELS. If a selected id is NOT here, getEngine()
-// coerces it to DEFAULT_MODEL --- which previously silently swapped the v3 selection for v2 and left
-// engineReady(v3) permanently false (the chat could hang on the readiness check). v3 must be present + default.
+export const V3_MODEL_ID = 'ezequielmolina/gallito-v3-1.5b-onnx';   // hosted on HF (Trained on Opus, 1.5B)
+export const V3_05B_MODEL_ID = 'ezequielmolina/gallito-v3-0.5b-onnx'; // Trained on Opus, 0.5B — the in-browser default
+// The 0.5B v3 is the DEFAULT for the browser: onnxruntime-web can't stage the 1.5B (q4f16 ~1.27 GB) — WebGPU
+// aborts with an opaque numeric exception and single-thread wasm (no cross-origin isolation on GitHub Pages) is
+// too slow. The 0.5B (~0.56 GB) runs on the WebGPU EP and downloads fast. The 1.5B stays available for powerful
+// PCs / a cross-origin-isolated host. NOTE: keep in sync with coach.js's TF_MODELS.
 export const MODELS = [
-  { id: V3_MODEL_ID, label: 'Gallito · Trained on Opus', sizeGB: 1.35, note: 'el mejor modelo (destilado de Opus) — ONNX' },
+  { id: V3_05B_MODEL_ID, label: 'Gallito · Trained on Opus', sizeGB: 0.56, note: 'destilado de Opus (0.5B) — rápido en el navegador' },
+  { id: V3_MODEL_ID, label: 'Gallito · Trained on Opus (1.5B)', sizeGB: 1.35, note: '1.5B — mayor calidad, necesita PC potente o servidor aislado' },
   { id: V2_MODEL_ID, label: 'Gallito v2', sizeGB: 1.35, note: 'v2 afinado 4 pasos (ONNX)' },
   { id: EMC_MODEL_ID, label: 'Gallito v1', sizeGB: 1.0, note: 'v1 Paso-1 (ONNX)' },
 ];
-export const DEFAULT_MODEL = MODELS[0].id;   // v3 (best model) is the default
+export const DEFAULT_MODEL = MODELS[0].id;   // 0.5B v3 — the model that actually runs in the browser
 
 // Model selection persists in localStorage. We reuse the SAME key coach.js uses ('emc_model') so switching
 // engines doesn't lose/clobber the choice. If a stale WebLLM/MLC id is stored, we coerce to our ONNX id
@@ -104,6 +107,7 @@ export async function hasBundledModel() { return false; }
 
 let _engine = null;       // the loaded text-generation pipeline (carries .tokenizer)
 let _engineModel = null;  // id of the currently loaded model
+let _engineDevice = null; // execution provider actually used ('webgpu' | 'wasm')
 let _loading = null;      // in-flight load promise (dedupes concurrent getEngine calls)
 
 const _isGpuErr = (e) => /device.*lost|gpu|webgpu|out of memory|oom|adapter|d3d|vulkan/i.test(String((e && e.message) || e));
@@ -140,34 +144,34 @@ export async function getEngine(modelId = DEFAULT_MODEL, onProgress) {
     }
     _engine = { mock: true }; _engineModel = modelId; return _engine;
   }
-  if (!webgpuAvailable()) throw new Error('NO_WEBGPU');
   modelId = MODELS.some((m) => m.id === modelId) ? modelId : DEFAULT_MODEL; // only our ONNX id is loadable here
   if (_engine && _engineModel === modelId) return _engine;
   if (_loading && _engineModel === modelId) return _loading;
   _engineModel = modelId;
 
-  // AUTO-FALLBACK ladder: try the requested model, then the lighter/known-good ones after it in MODELS
-  // (v3 -> v2 -> v1). A model that DOWNLOADS but won't INSTANTIATE in onnxruntime-web (e.g. an "Aborted()"
-  // WASM error on a graph ORT can't optimize) drops to the next, so the student always gets a working coach
-  // instead of a dead-end error screen.
-  const _idx = Math.max(0, MODELS.findIndex((m) => m.id === modelId));
-  const _candidates = MODELS.slice(_idx).map((m) => m.id);
+  // AUTO-FALLBACK ladder: the requested model first, then EVERY model in MODELS order (deduped). Listing the
+  // full set — not just the ones after the requested index — guarantees the in-browser-safe 0.5B default is
+  // always reachable even if a heavier model (e.g. the 1.5B, which WebGPU can't stage) was selected/stored.
+  const _candidates = [...new Set([modelId, ...MODELS.map((m) => m.id)])];
 
-  // For each candidate model we try TWO optimization modes, in order:
-  //   'default' → let ORT-web optimize (fuses nodes → few shaders → fast compile + fast inference). This is
-  //               how the correctly-exported v1/v2/v3 (transformers.js converter) load; it's the normal path.
-  //   'disabled' → last-resort for a model whose graph makes ORT abort during optimization (an old custom
-  //               export had a SimplifiedLayerNorm fusion that aborts in ORT). Loadable but MUCH slower
-  //               (a shader per unoptimized node → multi-minute compile), so only if 'default' actually fails.
-  async function _tryLoad(id, opt) {
+  // For each candidate we try TWO execution providers, in order:
+  //   'webgpu' → fast, GPU. But onnxruntime-web's WebGPU EP CRASHES on the 1.5B q4f16 graph on some
+  //              GPUs/drivers with an opaque numeric WASM exception (verified: a tiny model runs on WebGPU here,
+  //              but the 1.5B throws 1364322384 with no name/message — a raw WASM abort, not a JS Error).
+  //   'wasm'   → CPU. Slower (this is exactly the paper's ~5.8 tok/s low-end-CPU path) but ROBUST — the same
+  //              q4f16 model generates on CPU (verified via a Node onnxruntime harness). So if WebGPU aborts,
+  //              the student still gets a working coach on CPU instead of a dead-end error screen.
+  // Only offer 'webgpu' when the browser actually has it; otherwise go straight to CPU.
+  const _devices = webgpuAvailable() ? ['webgpu', 'wasm'] : ['wasm'];
+
+  async function _tryLoad(id, device) {
     const gen = await pipeline('text-generation', id, {
-      device: 'webgpu',
+      device,
       dtype: EMC_DTYPE,
-      ...(opt === 'disabled' ? { session_options: { graphOptimizationLevel: 'disabled' } } : {}),
       progress_callback: _mkProgressCb(onProgress),
     });
-    // Warm up: compile shaders + surface any instantiation error NOW (so we can fall back).
-    onProgress && onProgress({ progress: 1, text: 'Afinando el modelo…' });
+    // Warm up: surface any instantiation/first-run error NOW (so we can fall back).
+    onProgress && onProgress({ progress: 1, text: device === 'wasm' ? 'Afinando el modelo (CPU)…' : 'Afinando el modelo…' });
     await gen([{ role: 'user', content: 'Hola' }], { max_new_tokens: 1, do_sample: false });
     return gen;
   }
@@ -176,19 +180,19 @@ export async function getEngine(modelId = DEFAULT_MODEL, onProgress) {
     let lastErr;
     for (let k = 0; k < _candidates.length; k++) {
       const id = _candidates[k];
-      for (const opt of ['default', 'disabled']) {
+      for (const device of _devices) {
         try {
-          if (k > 0 && opt === 'default') { try { onProgress && onProgress({ progress: 0, text: 'Probando un modelo alternativo…' }); } catch (_) {} }
-          if (opt === 'disabled') { try { onProgress && onProgress({ progress: 0, text: 'Reintentando (modo compatible)…' }); } catch (_) {} }
-          const gen = await _tryLoad(id, opt);
-          _engine = gen; _engineModel = id; _loading = null;
-          try { logEvent('model_ready', { model: id, requested: modelId, fell_back: id !== modelId, attempt: k, opt, engine: 'transformers' }); } catch (_) {}
+          if (device === 'wasm' && _devices.length > 1) { try { onProgress && onProgress({ progress: 0, text: 'Cambiando a modo CPU (más lento)…' }); } catch (_) {} }
+          else if (k > 0) { try { onProgress && onProgress({ progress: 0, text: 'Probando un modelo alternativo…' }); } catch (_) {} }
+          const gen = await _tryLoad(id, device);
+          _engine = gen; _engineModel = id; _engineDevice = device; _loading = null;
+          try { logEvent('model_ready', { model: id, requested: modelId, fell_back: id !== modelId, device, engine: 'transformers' }); } catch (_) {}
           return gen;
         } catch (err) {
           lastErr = err;
-          console.error(`[getEngine] load FAILED model=${id} opt=${opt}:`, err, '| name=', err && err.name, '| msg=', err && err.message, '| stack=', err && err.stack);
-          try { logEvent('model_load_failed', { model: id, requested: modelId, attempt: k, opt, err: String((err && err.message) || err).slice(0, 140) }); } catch (_) {}
-          // 'default' failed → retry SAME model with 'disabled'; if that fails too → next (lighter) candidate.
+          console.error(`[getEngine] load FAILED model=${id} device=${device}:`, err, '| val=', String(err), '| type=', typeof err, '| name=', err && err.name, '| msg=', err && err.message);
+          try { logEvent('model_load_failed', { model: id, requested: modelId, device, err: String((err && err.message) || err).slice(0, 140) }); } catch (_) {}
+          // webgpu failed → retry SAME model on CPU (wasm); if that fails too → next (lighter) candidate.
         }
       }
     }

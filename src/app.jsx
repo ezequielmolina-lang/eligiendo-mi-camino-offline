@@ -555,7 +555,6 @@ function App(){
           Comenzar mi camino
         </button>
         <div className="mt-6 flex items-center justify-center gap-3 flex-wrap"><img src={WBG_LOGO} alt="Grupo Banco Mundial" style={{height:24}} className="opacity-50"/><span className="text-navy-300 text-xs">×</span><span className="text-navy-500/60 text-sm font-bold">uDocz</span><span className="text-navy-300 text-xs">×</span><span className="text-sm font-bold" style={{background:"linear-gradient(90deg,#2dd4bf,#f59e0b)",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}}>&lt;AIdea&gt;</span></div><p className="text-navy-500/40 mt-2 text-xs">Para estudiantes de 5to de secundaria en Lima</p>
-        <p className="text-navy-500/30 mt-2 text-[10px]">Powered by Anthropic</p>
       </div>
       </div>
     </div>
@@ -611,7 +610,6 @@ function App(){
           </div>
         </div>
         <div className="mt-3"><SyncBadge/></div>
-        <p className="text-[10px] text-navy-200 text-center">Powered by Anthropic</p>
       </div>
     </aside>
   );
